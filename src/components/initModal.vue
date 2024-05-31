@@ -30,7 +30,7 @@
 @media (min-width: 0px) {
   .content-popup {
     background-color: #fef7f9;
-    @apply w-full h-max flex flex-col justify-center items-center py-[20%];
+    @apply w-9/0 h-max flex flex-col justify-center items-center py-[20%];
   }
   .image {
     @apply w-8/0;
