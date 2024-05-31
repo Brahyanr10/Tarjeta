@@ -1,17 +1,15 @@
 <script setup>
-import WellcomeModal from './components/WellcomeModal.vue';
+import initModal from './components/initModal.vue';
+import card from './components/card.vue';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 AOS.init();
 </script>
 
-<template class="template">
-  <WellcomeModal></WellcomeModal>
+<template>
+  <!-- <initModal class="w-full" /> -->
+  <card class="w-full" />
+  <initModal class="w-full" />
 </template>
 
-<style scoped>
-.template {
-  @apply w-full h-full border border-y-black;
-  background-color: #fef7f9;
-}
-</style>
+<style></style>
