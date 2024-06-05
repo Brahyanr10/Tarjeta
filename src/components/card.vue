@@ -7,14 +7,14 @@
         class="left-content w-full flex flex-col justify-center items-center"
       >
         <div
-          class="parallax-content w-full flex flex-col justify-center items-center opacity-80 z-0"
+          class="w-full h-full flex flex-col justify-center items-center opacity-80 z-0 object object-cover"
         >
           <img
             decoding="async"
-            class="w-full z-0"
+            class="w-full"
             src="../assets/weading/DSC_0450.jpg"
             alt=""
-            loading=""
+            loading="lazy"
           />
         </div>
         <div
@@ -25,15 +25,15 @@
             class="separator z-50"
             src="https://www.fixdate.io/modelo-invitacion/71/img/curva_mobile.png"
             alt=""
-            loading=""
+            loading="lazy"
           />
         </div>
       </div>
-      <div class="w-full flex flex-col justify-center items-center">
+      <div class="w-full flex flex-col justify-center items-center z-50">
         <div
-          class="right-content w-9/0 flex flex-col justify-center items-center"
+          class="right-content w-9/0 flex flex-col justify-center items-center z-50"
         >
-          <p class="dateText">09.11.2024</p>
+          <p class="dateText">16.11.2024</p>
           <div class="content-names">
             <p class="textNameBr">Brahyan</p>
             <span class="w-full flex justify-center items-center text-[#9a8479]"
@@ -50,7 +50,7 @@
                 class="w-1/0"
                 src="https://www.fixdate.io/modelo-invitacion/71/img/comilla-apertura.svg"
                 alt=""
-                loading=""
+                loading="lazy"
               />
             </div>
             <p class="text-phrs">
@@ -63,7 +63,7 @@
                 class="w-1/0"
                 src="https://www.fixdate.io/modelo-invitacion/71/img/comilla-cierre.svg"
                 alt=""
-                loading=""
+                loading="lazy"
               />
             </div>
           </div>
@@ -82,19 +82,15 @@
   .content-grid {
     @apply w-full;
   }
-  .parallax-content {
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: scroll;
-    @apply h-full;
-  }
+  /* .parallax-content {
+    @apply w-full;
+    background-image: url('../assets/weading/DSC_0450.jpg');
+  } */
   .separator {
     @apply w-full;
   }
   .separator-content {
-    @apply -mt-[68px];
+    @apply -mt-[98px];
   }
   .dateText {
     font-family: 'Playfair Display', Serif;
@@ -148,7 +144,7 @@
     @apply w-full;
   }
   .separator-content {
-    @apply -mt-[80px];
+    /* @apply -mt-[80px]; */
   }
 }
 @media (min-width: 425px) {
@@ -160,7 +156,7 @@
     @apply w-full;
   }
   .separator-content {
-    @apply -mt-[90px];
+    /* @apply -mt-[90px]; */
   }
 }
 </style>

@@ -5,14 +5,23 @@ import timeModal from './components/timeModal.vue';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 AOS.init();
+
+import { ref } from 'vue';
+
+const isView = ref(true);
+
+const changeModalState = (value) => {
+  isView.value = value;
+};
 </script>
 
 <template>
-  <!-- <initModal /> -->
   <div class="content-main">
-    <card />
-    <timeModal />
-    <initModal />
+    <initModal v-if="isView" :setOpen="changeModalState" />
+    <div v-else class="content-main">
+      <card />
+      <timeModal />
+    </div>
   </div>
 </template>
 

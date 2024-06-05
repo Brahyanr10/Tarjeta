@@ -1,4 +1,11 @@
-<script setup></script>
+<script setup>
+const props = defineProps({
+  setOpen: {
+    type: Function,
+    required: true,
+  },
+});
+</script>
 
 <template>
   <div class="content-popup">
@@ -8,21 +15,21 @@
         class="image"
         src="https://www.fixdate.io/modelo-invitacion/71/img/adorno-modal-musica.png"
         alt=""
-        loading=""
+        loading="lazy"
       />
     </div>
     <h2 class="text-wellcome">Bienvenidos a la invitación de</h2>
     <h1 class="text-names">Brahyan & Ximena</h1>
-    <button class="button-in">Ingresar</button>
-    <div class="w-full flex flex-col justify-center items-center">
+    <button class="button-in" @click="setOpen(false)">Ingresar</button>
+    <!-- <div class="w-full flex flex-col justify-center items-center">
       <img
         decoding="async"
         class="separator"
         src="https://www.fixdate.io/modelo-invitacion/71/img/curva_mobile.png"
         alt=""
-        loading=""
+        loading="lazy"
       />
-    </div>
+    </div> -->
   </div>
 </template>
 
@@ -30,7 +37,7 @@
 @media (min-width: 0px) {
   .content-popup {
     background-color: #fef7f9;
-    @apply w-9/0 h-max flex flex-col justify-center items-center py-[20%];
+    @apply w-9/0 min-h-screen flex flex-col justify-center items-center py-[20%];
   }
   .image {
     @apply w-8/0;
