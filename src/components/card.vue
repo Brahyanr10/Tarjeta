@@ -185,7 +185,7 @@
     @apply hidden;
   }
   .content-image-bg-md {
-    @apply w-[230%] h-full flex justify-start items-start bg-cover opacity-80 overflow-y-hidden;
+    @apply w-[230%] h-full flex justify-start items-start bg-cover opacity-90 overflow-y-hidden;
     background-image: url('../assets/weading/prueba.jpg');
   }
   .content-separator-vert {
@@ -200,7 +200,7 @@
 }
 @media (min-width: 1024px) {
   .content-image-bg-md {
-    @apply w-[230%] h-full flex justify-start items-start bg-cover opacity-80 overflow-y-hidden;
+    @apply w-[230%] h-full flex justify-start items-start bg-cover opacity-90 overflow-y-hidden;
     background-image: url('../assets/weading/prueba.jpg');
   }
   .textNameBr {

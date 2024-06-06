@@ -2,7 +2,7 @@
 import initModal from './components/initModal.vue';
 import card from './components/card.vue';
 import timeModal from './components/timeModal.vue';
-
+import info from './components/info.vue';
 import { ref } from 'vue';
 
 const isView = ref(true);
@@ -17,7 +17,8 @@ const changeModalState = (value) => {
     <initModal v-if="isView" :setOpen="changeModalState" />
     <div v-else class="subcontent-main">
       <card class="z-10" />
-      <timeModal class="z-50"></timeModal>
+      <timeModal class="z-50" />
+      <info />
     </div>
   </div>
 </template>
