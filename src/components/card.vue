@@ -1,115 +1,125 @@
 <script setup></script>
-
 <template>
   <div class="content-popup">
     <div class="content-grid">
-      <div
-        class="left-content w-full flex flex-col justify-center items-center z-40"
-      >
-        <div
-          class="w-full h-full md:h-screen flex flex-col justify-center items-center opacity-80 z-0"
-        >
-          <div
-            class="image-bg-left h-screen fixed bg-fixed bg-cover bg-center"
-          ></div>
+      <!-- Content Left -->
+      <div class="content-left">
+        <!-- Background img -->
+        <div class="content-image-bg-md"></div>
+        <!-- Image mobile -->
+        <div class="content-image-mobile">
           <img
             decoding="async"
-            class="w-full image-left"
+            class="w-full z-10"
             src="../assets/weading/DSC_0450.jpg"
             alt=""
             loading="lazy"
           />
         </div>
-        <div
-          class="w-full flex flex-col justify-center items-center separator-content z-50 md:z-0"
-        >
+        <div class="content-separator-mobile">
           <img
             decoding="async"
-            class="separator z-50"
+            class="w-full z-50"
             src="https://www.fixdate.io/modelo-invitacion/71/img/curva_mobile.png"
             alt=""
             loading="lazy"
           />
         </div>
       </div>
-
-      <div
-        class="w-full flex flex-col justify-center items-center z-50 md:flex-row md:ml-[-20%]"
-      >
-        <div
-          class="w-full flex flex-col justify-center items-center separator-content z-30"
-        >
+      <!-- Separator -->
+      <div class="content-separator-vert">
+        <img
+          decoding="async"
+          class="w-full z-50"
+          src="https://www.fixdate.io/modelo-invitacion/71/img/curva_portada_VERTICAL.svg"
+          alt=""
+          loading="lazy"
+        />
+      </div>
+      <!-- Content Right -->
+      <div class="content-right">
+        <div class="content-image-top-md">
           <img
             decoding="async"
-            class="separator-vert z-50"
-            src="https://www.fixdate.io/modelo-invitacion/71/img/curva_portada_VERTICAL.svg"
+            class="w-full"
+            src="../assets/Flowers/Flower_1.png"
             alt=""
             loading="lazy"
           />
         </div>
-        <div
-          class="right-content w-9/0 h-full flex flex-col justify-center items-center z-50"
-        >
-          <p class="dateText">16.11.2024</p>
-          <div class="content-names">
-            <p class="textNameBr">Brahyan</p>
-            <span class="w-full flex justify-center items-center text-[#9a8479]"
-              >——————
-              <p class="textY">&</p>
-              ——————</span
-            >
-            <p class="textNameXm">Ximena</p>
+        <p class="dateText">16.11.2024</p>
+        <div class="content-names">
+          <h1 class="textNameBr">Brahyan</h1>
+          <span class="w-full flex justify-center items-center text-[#9a8479]"
+            >——————
+            <p class="textY">&</p>
+            ——————</span
+          >
+          <h1 class="textNameXm">Ximena</h1>
+        </div>
+        <div class="content-message">
+          <div class="w-full flex flex-col justify-center items-center">
+            <img
+              decoding="async"
+              class="w-1/0"
+              src="https://www.fixdate.io/modelo-invitacion/71/img/comilla-apertura.svg"
+              alt=""
+              loading="lazy"
+            />
           </div>
-          <div class="content-phrs">
-            <div class="w-full flex flex-col justify-center items-center">
-              <img
-                decoding="async"
-                class="w-1/0"
-                src="https://www.fixdate.io/modelo-invitacion/71/img/comilla-apertura.svg"
-                alt=""
-                loading="lazy"
-              />
-            </div>
-            <p class="text-phrs">
-              Aunque uno pueda ser vencido, dos pueden resistir. !La cuerda de
-              tres hilos no se rompe facilmente!
-            </p>
-            <div class="w-full flex flex-col justify-center items-center">
-              <img
-                decoding="async"
-                class="w-1/0"
-                src="https://www.fixdate.io/modelo-invitacion/71/img/comilla-cierre.svg"
-                alt=""
-                loading="lazy"
-              />
-            </div>
+          <p class="text-message">
+            Hoy empieza nuestra vida con la bendición de Dios y la Virgen.
+            Escribiremos un libro lleno de historias y aventuras donde seremos
+            una sola carne, un solo ser.
+          </p>
+          <div class="w-full flex flex-col justify-center items-center">
+            <img
+              decoding="async"
+              class="w-1/0"
+              src="https://www.fixdate.io/modelo-invitacion/71/img/comilla-cierre.svg"
+              alt=""
+              loading="lazy"
+            />
           </div>
         </div>
       </div>
     </div>
   </div>
 </template>
-
 <style scoped>
 @media (min-width: 0px) {
   .content-popup {
     background-color: #fef7f9;
-    @apply w-full h-max flex flex-col justify-center items-center;
+    @apply w-full flex flex-col justify-center items-center;
   }
   .content-grid {
-    @apply w-full;
+    @apply w-full  grid grid-cols-1 border border-black overflow-hidden;
   }
-  .image-bg-left {
+  /* Left Content */
+  .content-left {
+    @apply w-full flex flex-col justify-start items-start;
+  }
+  .content-image-bg-md {
     @apply hidden;
   }
-  .separator-vert {
+  .content-image-mobile {
+    @apply w-full flex flex-col opacity-80 -mb-[82px] z-10;
+  }
+  .content-separator-mobile {
+    @apply w-full flex flex-col h-auto opacity-100 z-50;
+  }
+  /* Separator Vert */
+  .content-separator-vert {
     @apply hidden;
   }
-  .separator {
-    @apply w-full;
+  /* Right Content */
+  .content-right {
+    background-color: #fef7f9;
+    @apply w-full flex flex-col justify-start items-center z-50;
   }
-  .separator-content {
-    @apply -mt-[98px];
+
+  .content-image-top-md {
+    @apply hidden;
   }
   .dateText {
     font-family: 'Playfair Display', Serif;
@@ -130,6 +140,10 @@
     -webkit-background-clip: text;
     @apply w-full flex flex-col justify-center items-center  text-[60px] font-bold mt-10;
   }
+  .textY {
+    font-family: 'Playfair Display', Serif;
+    @apply w-auto text-[40px] rounded-full px-[14px] border border-[#D0888E] bg-[#D0888E] text-white mx-[6px];
+  }
   .textNameXm {
     font-family: 'Playfair Display', Serif;
     color: transparent;
@@ -142,69 +156,58 @@
     -webkit-background-clip: text;
     @apply w-auto flex flex-col justify-center items-center text-[60px] font-bold;
   }
-  .textY {
-    font-family: 'Playfair Display', Serif;
-    @apply w-auto text-[40px] rounded-full px-[14px] border border-[#D0888E] bg-[#D0888E] text-white mx-[6px];
+  .content-message {
+    @apply w-9/0 flex flex-col justify-center items-center py-5;
   }
-  .content-phrs {
-    @apply w-full flex flex-col justify-center items-center py-10;
-  }
-  .text-phrs {
+  .text-message {
     font-family: 'Quicksand', Sans-Serif;
     @apply w-full flex flex-col justify-center items-center text-[20px] text-[#716558] text-center py-5 font-light;
   }
 }
-@media (min-width: 320px) {
-  .content-popup {
-    background-color: #fef7f9;
-    @apply w-full h-max flex flex-col justify-center items-center;
-  }
-  .separator {
-    @apply w-full;
-  }
-  .separator-content {
-    /* @apply -mt-[80px]; */
+@media (min-width: 400px) {
+  .content-image-mobile {
+    @apply -mb-[110px];
   }
 }
-@media (min-width: 425px) {
-  .content-popup {
-    background-color: #fef7f9;
-    @apply w-full h-max flex flex-col justify-center items-center;
-  }
-  .separator {
-    @apply w-full;
-  }
-  .separator-content {
-    /* @apply -mt-[90px]; */
+@media (min-width: 480px) {
+  .content-image-mobile {
+    @apply -mb-[105px];
   }
 }
 @media (min-width: 768px) {
   .content-grid {
-    @apply w-full h-auto grid grid-cols-2;
+    @apply h-auto flex flex-row;
   }
-  .image-left {
+  .content-image-mobile {
     @apply hidden;
   }
-  .image-bg-left {
-    @apply w-full flex;
-    background-image: url('../assets/weading/DSC_0450.jpg');
-  }
-  .separator-content {
-    @apply mt-[0px];
-  }
-  .separator {
+  .content-separator-mobile {
     @apply hidden;
   }
-  .separator-vert {
-    @apply w-full flex;
+  .content-image-bg-md {
+    @apply w-[230%] h-full flex justify-start items-start bg-cover opacity-80 overflow-y-hidden;
+    background-image: url('../assets/weading/prueba.jpg');
   }
-  .right-content {
-    @apply bg-[#FEF7F9];
+  .content-separator-vert {
+    @apply w-[40%] h-auto flex justify-center items-center z-0;
+  }
+  .content-image-top-md {
+    @apply w-7/0 flex flex-col justify-center items-center pb-10 -mt-[25px];
+  }
+  .text-message {
+    @apply text-[18px];
   }
 }
-@media (min-width: 1200px) {
-  .content-grid {
-    @apply w-[1200px];
+@media (min-width: 1024px) {
+  .content-image-bg-md {
+    @apply w-[230%] h-full flex justify-start items-start bg-cover opacity-80 overflow-y-hidden;
+    background-image: url('../assets/weading/prueba.jpg');
+  }
+  .textNameBr {
+    @apply text-[70px];
+  }
+  .textNameXm {
+    @apply text-[70px];
   }
 }
 </style>
