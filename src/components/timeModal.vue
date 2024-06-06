@@ -213,12 +213,29 @@ onUnmounted(() => {
     @apply w-full flex z-10;
   }
   .content-image-time {
-    @apply w-6/0 absolute;
+    @apply w-[460px] absolute;
   }
 }
 @media (min-width: 1024px) {
+  .content-popup {
+    @apply -mt-10;
+  }
   .content-image-time {
-    @apply w-6/0;
+    @apply w-[550px];
+  }
+  .animate-pulse {
+    width: 60px;
+    height: 60px;
+    @apply mt-6;
+  }
+  .text-time-title {
+    @apply text-[50px];
+  }
+  .text-time {
+    @apply text-[38px];
+  }
+  .sub-text {
+    @apply text-[28px];
   }
 }
 </style>
