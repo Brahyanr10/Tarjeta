@@ -77,7 +77,7 @@ onUnmounted(() => {
           <span class="countdown font-mono text-xl lg:text-5xl text-[#D0888E]">
             <span :style="secondsStyle"></span>
           </span>
-          <span class="text-[#716558]">Sec</span>
+          <span class="text-[#716558]">Seg</span>
         </div>
       </div>
       <svg
@@ -132,10 +132,10 @@ onUnmounted(() => {
 @media (min-width: 0px) {
   .content-popup {
     background-color: #fef7f9;
-    @apply w-full h-max flex flex-col justify-center items-center py-[20%];
+    @apply w-full h-max flex flex-col justify-center items-center pt-[5%] pb-[20%];
   }
   .text-time-title {
-    @apply w-auto z-50 -mt-[240px] text-[#D0888E] text-4xl mb-6 font-semibold;
+    @apply w-auto z-50 -mt-[240px]  text-[#D0888E] text-4xl mb-6 font-semibold;
   }
   .text-time {
     @apply w-auto z-50;
@@ -144,5 +144,14 @@ onUnmounted(() => {
 @media (min-width: 320px) {
 }
 @media (min-width: 425px) {
+}
+@media (min-width: 768px) {
+  .content-popup {
+    background-color: #fef7f9;
+    @apply pt-[0%] pb-[0%];
+  }
+  .text-time-title {
+    @apply mt-[0px];
+  }
 }
 </style>

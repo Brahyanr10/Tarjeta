@@ -2,9 +2,6 @@
 import initModal from './components/initModal.vue';
 import card from './components/card.vue';
 import timeModal from './components/timeModal.vue';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
-AOS.init();
 
 import { ref } from 'vue';
 
@@ -20,7 +17,6 @@ const changeModalState = (value) => {
     <initModal v-if="isView" :setOpen="changeModalState" />
     <div v-else class="content-main">
       <card />
-      <timeModal />
     </div>
   </div>
 </template>

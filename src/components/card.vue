@@ -4,21 +4,24 @@
   <div class="content-popup">
     <div class="content-grid">
       <div
-        class="left-content w-full flex flex-col justify-center items-center"
+        class="left-content w-full flex flex-col justify-center items-center z-40"
       >
         <div
-          class="w-full h-full flex flex-col justify-center items-center opacity-80 z-0 object object-cover"
+          class="w-full h-full md:h-screen flex flex-col justify-center items-center opacity-80 z-0"
         >
+          <div
+            class="image-bg-left h-screen fixed bg-fixed bg-cover bg-center"
+          ></div>
           <img
             decoding="async"
-            class="w-full"
+            class="w-full image-left"
             src="../assets/weading/DSC_0450.jpg"
             alt=""
             loading="lazy"
           />
         </div>
         <div
-          class="w-full flex flex-col justify-center items-center separator-content z-50"
+          class="w-full flex flex-col justify-center items-center separator-content z-50 md:z-0"
         >
           <img
             decoding="async"
@@ -29,9 +32,23 @@
           />
         </div>
       </div>
-      <div class="w-full flex flex-col justify-center items-center z-50">
+
+      <div
+        class="w-full flex flex-col justify-center items-center z-50 md:flex-row md:ml-[-20%]"
+      >
         <div
-          class="right-content w-9/0 flex flex-col justify-center items-center z-50"
+          class="w-full flex flex-col justify-center items-center separator-content z-30"
+        >
+          <img
+            decoding="async"
+            class="separator-vert z-50"
+            src="https://www.fixdate.io/modelo-invitacion/71/img/curva_portada_VERTICAL.svg"
+            alt=""
+            loading="lazy"
+          />
+        </div>
+        <div
+          class="right-content w-9/0 h-full flex flex-col justify-center items-center z-50"
         >
           <p class="dateText">16.11.2024</p>
           <div class="content-names">
@@ -82,10 +99,12 @@
   .content-grid {
     @apply w-full;
   }
-  /* .parallax-content {
-    @apply w-full;
-    background-image: url('../assets/weading/DSC_0450.jpg');
-  } */
+  .image-bg-left {
+    @apply hidden;
+  }
+  .separator-vert {
+    @apply hidden;
+  }
   .separator {
     @apply w-full;
   }
@@ -157,6 +176,35 @@
   }
   .separator-content {
     /* @apply -mt-[90px]; */
+  }
+}
+@media (min-width: 768px) {
+  .content-grid {
+    @apply w-full h-auto grid grid-cols-2;
+  }
+  .image-left {
+    @apply hidden;
+  }
+  .image-bg-left {
+    @apply w-full flex;
+    background-image: url('../assets/weading/DSC_0450.jpg');
+  }
+  .separator-content {
+    @apply mt-[0px];
+  }
+  .separator {
+    @apply hidden;
+  }
+  .separator-vert {
+    @apply w-full flex;
+  }
+  .right-content {
+    @apply bg-[#FEF7F9];
+  }
+}
+@media (min-width: 1200px) {
+  .content-grid {
+    @apply w-[1200px];
   }
 }
 </style>

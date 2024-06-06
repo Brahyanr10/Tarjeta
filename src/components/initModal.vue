@@ -21,15 +21,6 @@ const props = defineProps({
     <h2 class="text-wellcome">Bienvenidos a la invitación de</h2>
     <h1 class="text-names">Brahyan & Ximena</h1>
     <button class="button-in" @click="setOpen(false)">Ingresar</button>
-    <!-- <div class="w-full flex flex-col justify-center items-center">
-      <img
-        decoding="async"
-        class="separator"
-        src="https://www.fixdate.io/modelo-invitacion/71/img/curva_mobile.png"
-        alt=""
-        loading="lazy"
-      />
-    </div> -->
   </div>
 </template>
 
@@ -37,7 +28,7 @@ const props = defineProps({
 @media (min-width: 0px) {
   .content-popup {
     background-color: #fef7f9;
-    @apply w-9/0 min-h-screen flex flex-col justify-center items-center py-[20%];
+    @apply w-9/0 min-h-screen flex flex-col justify-center items-center;
   }
   .image {
     @apply w-8/0;
@@ -52,7 +43,7 @@ const props = defineProps({
   }
   .button-in {
     font-family: 'Quicksand', Sans-Serif;
-    @apply w-auto py-[2%] px-[10%] rounded-full bg-[#D0888E] text-white shadow-md cursor-pointer;
+    @apply w-auto py-[2%] px-[10%] rounded-full bg-[#D0888E] text-white shadow-md cursor-pointer hover:bg-[#c47f85];
   }
   .separator {
     @apply w-full;
@@ -61,7 +52,7 @@ const props = defineProps({
 @media (min-width: 320px) {
   .content-popup {
     background-color: #fef7f9;
-    @apply w-full h-max flex flex-col justify-center items-center py-[20%];
+    @apply w-full h-max flex flex-col justify-center items-center;
   }
   .image {
     @apply w-8/0;
@@ -85,7 +76,7 @@ const props = defineProps({
 @media (min-width: 425px) {
   .content-popup {
     background-color: #fef7f9;
-    @apply w-full h-max flex flex-col justify-center items-center py-[20%];
+    @apply w-full h-full flex flex-col justify-center items-center;
   }
   .image {
     @apply w-8/0;
@@ -104,6 +95,28 @@ const props = defineProps({
   }
   .separator {
     @apply w-full;
+  }
+}
+@media (min-width: 768px) {
+  .image {
+    @apply w-[450px];
+  }
+}
+@media (min-width: 1200px) {
+  .image {
+    @apply w-[600px];
+  }
+  .text-wellcome {
+    font-family: 'Quicksand', Sans-Serif;
+    @apply w-9/0 flex flex-col justify-center items-center text-[#9a8479] text-[20px] leading-[30px];
+  }
+  .text-names {
+    font-family: 'Playfair Display', Serif;
+    @apply w-9/0 flex flex-col justify-center items-center text-[#D0888E] text-[40px] leading-[70px] mb-[20px] font-bold;
+  }
+  .button-in {
+    font-family: 'Quicksand', Sans-Serif;
+    @apply w-auto py-2 px-10 rounded-full bg-[#D0888E] text-white shadow-md cursor-pointer;
   }
 }
 </style>
