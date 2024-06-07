@@ -59,7 +59,7 @@
           <a
             class="button-dates"
             target="_blank"
-            href="https://maps.app.goo.gl/Ah64FzGoQ3FA3soR6"
+            href="https://maps.app.goo.gl/GABukPdXuCTyQwBF6?g_st=ic"
           >
             <p class="text-button">Como llegar</p>
           </a>
