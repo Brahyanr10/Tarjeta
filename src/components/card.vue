@@ -93,7 +93,7 @@
     @apply w-full flex flex-col justify-center items-center;
   }
   .content-grid {
-    @apply w-full  grid grid-cols-1 border border-black overflow-hidden;
+    @apply w-full  grid grid-cols-1 overflow-hidden;
   }
   /* Left Content */
   .content-left {

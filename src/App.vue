@@ -24,8 +24,9 @@ const changeModalState = (value) => {
 </template>
 
 <style scoped>
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
 .content-main {
-  background-color: #fef7f9;
+  /* background-color: #fef7f9; */
   @apply w-full flex flex-col justify-center items-center;
 }
 .subcontent-main {
