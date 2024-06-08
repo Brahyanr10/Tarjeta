@@ -21,52 +21,114 @@
             loading=""
           />
         </div>
-
-        <div class="content-title">
-          <div class="subcontent-lazos">
-            <img
-              decoding="async"
-              class="w-auto z-50"
-              src="https://www.fixdate.io/modelo-invitacion/71/img/img_cinta01.svg"
-              alt=""
-              loading=""
-            />
+        <div class="content-information">
+          <div class="content-title">
+            <div class="subcontent-lazos">
+              <img
+                decoding="async"
+                class="w-auto z-50"
+                src="https://www.fixdate.io/modelo-invitacion/71/img/img_cinta01.svg"
+                alt=""
+                loading=""
+              />
+            </div>
+            <p class="text-title">Ceremonia</p>
+            <div class="subcontent-lazos">
+              <img
+                decoding="async"
+                class="w-auto z-50"
+                src="https://www.fixdate.io/modelo-invitacion/71/img/img_cinta02.svg"
+                alt=""
+                loading=""
+              />
+            </div>
           </div>
-          <p class="text-title">Ceremonia</p>
-          <div class="subcontent-lazos">
-            <img
-              decoding="async"
-              class="w-auto z-50"
-              src="https://www.fixdate.io/modelo-invitacion/71/img/img_cinta02.svg"
-              alt=""
-              loading=""
-            />
+          <div class="content-dates">
+            <h3 class="text-date">DÍA</h3>
+            <p class="subtext-date">
+              Sábado 16 de Noviembre <br />
+              Hora - 4:00 p.m.
+            </p>
           </div>
-        </div>
-        <div class="content-dates">
-          <h3 class="text-date">DÍA</h3>
-          <p class="subtext-date">
-            Sábado 16 de Noviembre <br />
-            Hora - 4:00 p.m.
-          </p>
-        </div>
-        <div class="content-dates">
-          <h3 class="text-date">LUGAR</h3>
-          <p class="subtext-date pb-8">
-            Parroquia<br />Nuestra Señora de Lourdes
-          </p>
+          <div class="content-dates">
+            <h3 class="text-date">LUGAR</h3>
+            <p class="subtext-date pb-8">
+              Parroquia<br />Nuestra Señora de Lourdes
+            </p>
 
-          <a
-            class="button-dates"
-            target="_blank"
-            href="https://maps.app.goo.gl/GABukPdXuCTyQwBF6?g_st=ic"
-          >
-            <p class="text-button">Como llegar</p>
-          </a>
+            <a
+              class="button-dates"
+              target="_blank"
+              href="https://maps.app.goo.gl/GABukPdXuCTyQwBF6?g_st=ic"
+            >
+              <p class="text-button">Como llegar</p>
+            </a>
+          </div>
         </div>
       </div>
 
-      <div class="content-celebration"></div>
+      <div class="content-celebration">
+        <div class="content-line-ceremony">
+          <img
+            decoding="async"
+            class="w-full z-10"
+            src="https://www.fixdate.io/modelo-invitacion/71/img/lineas01.svg"
+            alt=""
+            loading=""
+          />
+        </div>
+        <div class="content-gif-ceremony">
+          <img
+            decoding="async"
+            class="w-full z-50"
+            src="../assets/Svg/celebration.svg"
+            alt=""
+            loading=""
+          />
+        </div>
+        <div class="content-information">
+          <div class="content-title">
+            <div class="subcontent-lazos">
+              <img
+                decoding="async"
+                class="w-auto z-50"
+                src="https://www.fixdate.io/modelo-invitacion/71/img/img_cinta01.svg"
+                alt=""
+                loading=""
+              />
+            </div>
+            <p class="text-title">Celebración</p>
+            <div class="subcontent-lazos">
+              <img
+                decoding="async"
+                class="w-auto z-50"
+                src="https://www.fixdate.io/modelo-invitacion/71/img/img_cinta02.svg"
+                alt=""
+                loading=""
+              />
+            </div>
+          </div>
+          <div class="content-dates">
+            <h3 class="text-date">DÍA</h3>
+            <p class="subtext-date">
+              Sábado 16 de Noviembre <br />
+              Hora - 7:00 p.m.
+            </p>
+          </div>
+          <div class="content-dates">
+            <h3 class="text-date">LUGAR</h3>
+            <p class="subtext-date pb-8">Finca<br />La Esmeralda</p>
+
+            <a
+              class="button-dates"
+              target="_blank"
+              href="https://maps.app.goo.gl/uVjZF3agffGheA9X9?g_st=ic"
+            >
+              <p class="text-button">Como llegar</p>
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -89,6 +151,9 @@
   .content-line-ceremony {
     background-color: #fef7f9;
     @apply w-full flex flex-col justify-center items-center -mb-[30%];
+  }
+  .content-information {
+    @apply w-full flex flex-col justify-center items-center;
   }
   .content-title {
     @apply w-full flex flex-row justify-center items-center py-10;
@@ -116,6 +181,9 @@
   }
   .text-button {
     font-family: 'Quicksand', Sans-Serif;
+  }
+  .content-celebration {
+    @apply w-full flex flex-col justify-center items-center pt-20;
   }
 }
 @media (min-width: 375px) {
