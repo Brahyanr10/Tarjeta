@@ -67,7 +67,7 @@ const props = defineProps({
   }
   .button-in {
     font-family: 'Quicksand', Sans-Serif;
-    @apply w-auto py-[2%] px-[10%] rounded-full bg-[#D0888E] text-white shadow-md cursor-pointer;
+    @apply w-auto py-[3%] px-[10%] rounded-full bg-[#D0888E] text-white shadow-md cursor-pointer;
   }
   .separator {
     @apply w-full pt-[40px];

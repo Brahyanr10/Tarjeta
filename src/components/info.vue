@@ -1,6 +1,15 @@
 <script setup></script>
 <template>
   <div class="content-popup">
+    <div class="content-line-ceremony-md">
+      <img
+        decoding="async"
+        class="w-full z-10"
+        src="https://www.fixdate.io/modelo-invitacion/71/img/lineas01.svg"
+        alt=""
+        loading=""
+      />
+    </div>
     <div class="content-grid">
       <div class="content-ceremony">
         <div class="content-line-ceremony">
@@ -117,7 +126,9 @@
           </div>
           <div class="content-dates">
             <h3 class="text-date">LUGAR</h3>
-            <p class="subtext-date pb-8">Finca<br />La Esmeralda</p>
+            <p class="subtext-date pb-8">
+              Finca La Esmeralda<br />Vereda La Llanerita
+            </p>
 
             <a
               class="button-dates"
@@ -136,7 +147,10 @@
 @media (min-width: 0px) {
   .content-popup {
     background-color: #fef7f9;
-    @apply w-full flex flex-col justify-center items-center;
+    @apply w-full flex flex-col justify-center items-center pt-10;
+  }
+  .content-line-ceremony-md {
+    @apply hidden;
   }
   .content-grid {
     background-color: #fef7f9;
@@ -183,7 +197,7 @@
     font-family: 'Quicksand', Sans-Serif;
   }
   .content-celebration {
-    @apply w-full flex flex-col justify-center items-center pt-20;
+    @apply w-full flex flex-col justify-center items-center pt-24;
   }
 }
 @media (min-width: 375px) {
@@ -199,11 +213,25 @@
     @apply text-[35px];
   }
 }
+
 @media (min-width: 768px) {
-}
-@media (min-width: 768px) {
+  .content-popup {
+    @apply pt-60;
+  }
   .content-grid {
     @apply w-full grid grid-cols-2;
+  }
+  .content-line-ceremony {
+    @apply hidden;
+  }
+  .content-ceremony {
+    @apply pt-0;
+  }
+  .content-celebration {
+    @apply pt-0;
+  }
+  .content-line-ceremony-md {
+    @apply w-full flex flex-col justify-center items-center -mb-[175px];
   }
 }
 </style>
