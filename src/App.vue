@@ -3,6 +3,7 @@ import initModal from './components/initModal.vue';
 import card from './components/card.vue';
 import timeModal from './components/timeModal.vue';
 import info from './components/info.vue';
+import assistance from './components/assistance.vue';
 import { ref } from 'vue';
 
 const isView = ref(true);
@@ -19,11 +20,13 @@ const changeModalState = (value) => {
       <card class="z-10" />
       <timeModal class="z-50" />
       <info />
+      <assistance />
     </div>
   </div>
 </template>
 
 <style scoped>
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
 .content-main {
   /* background-color: #fef7f9; */
