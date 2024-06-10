@@ -163,15 +163,15 @@
 }
 @media (min-width: 375px) {
   .subcontent-lazos {
-    @apply w-[13px];
+    @apply w-[8px];
   }
 }
 @media (min-width: 425px) {
   .subcontent-lazos {
-    @apply w-[13px];
+    @apply w-[10px];
   }
   .text-title {
-    @apply text-[35px];
+    @apply text-[22px];
   }
 }
 
