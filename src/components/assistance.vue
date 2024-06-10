@@ -104,10 +104,10 @@
     @apply w-full flex flex-col justify-center items-center pt-10 pb-10;
   }
   .content-line-ceremony-md {
-    @apply w-full flex;
+    @apply w-full flex z-20;
   }
   .content-line-flower {
-    @apply w-[60%] -mt-16;
+    @apply w-[60%] -mt-16 z-50;
   }
   .text-confirmation {
     font-family: 'Playfair Display', Serif;
