@@ -3,9 +3,6 @@ import { ref } from 'vue';
 
 const checkCeremony = ref(0);
 const checkCelebration = ref(0);
-
-console.log(checkCeremony);
-console.log(checkCelebration);
 </script>
 <template>
   <div class="content-popup">
@@ -29,6 +26,9 @@ console.log(checkCelebration);
     </div>
 
     <h1 class="text-confirmation">Confirma tu asistencia!</h1>
+    <p class="text-subconfirmation">
+      Seleeciona las opciones a las que vas a asistir
+    </p>
     <div class="content-grid">
       <div class="content-ceremony">
         <div class="content-title">
@@ -1193,6 +1193,10 @@ console.log(checkCelebration);
   .text-confirmation {
     font-family: 'Playfair Display', Serif;
     @apply w-full flex flex-col justify-center items-center font-bold text-[25px] text-[#D0888E] pt-10;
+  }
+  .text-subconfirmation {
+    font-family: 'Playfair Display', Serif;
+    @apply w-9/0 flex flex-col justify-center items-center text-center text-[12px];
   }
   .content-grid {
     background-color: #fef7f9;
