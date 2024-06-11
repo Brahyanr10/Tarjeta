@@ -18,7 +18,7 @@ const changeModalState = (value) => {
     <initModal v-if="isView" :setOpen="changeModalState" />
     <div v-else class="subcontent-main">
       <card class="z-10" />
-      <timeModal class="z-50" />
+      <timeModal class="z-50 time" />
       <info />
       <assistance />
     </div>

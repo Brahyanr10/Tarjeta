@@ -40,86 +40,88 @@ onUnmounted(() => {
 </script>
 <template>
   <div class="content-popup">
-    <div class="content-image-time">
-      <img
-        decoding="async"
-        class="w-full z-50"
-        src="https://www.fixdate.io/modelo-invitacion/71/img/contador.png"
-        alt=""
-        loading=""
-      />
-    </div>
-    <div class="content-time">
-      <p class="text-time-title">Falta</p>
-      <div class="content-time-countdown">
-        <div class="content-type-time">
-          <span class="text-time">
-            <span :style="daysStyle"></span>
-          </span>
-          <span class="sub-text">Días</span>
-        </div>
-
-        <div class="content-type-time">
-          <span class="text-time">
-            <span :style="hoursStyle"></span>
-          </span>
-          <span class="sub-text">Hrs</span>
-        </div>
-        <div class="content-type-time">
-          <span class="text-time">
-            <span :style="minutesStyle"></span>
-          </span>
-          <span class="sub-text">Min</span>
-        </div>
-        <div class="flex flex-col">
-          <span class="text-time">
-            <span :style="secondsStyle"></span>
-          </span>
-          <span class="sub-text">Seg</span>
-        </div>
+    <div class="subcontent-popup">
+      <div class="content-image-time">
+        <img
+          decoding="async"
+          class="w-full z-50"
+          src="https://www.fixdate.io/modelo-invitacion/71/img/contador.png"
+          alt=""
+          loading=""
+        />
       </div>
-      <div class="content-svg-heart">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 38 32"
-          preserveAspectRatio="xMidYMid meet"
-          class="animate-pulse"
-          style="transform: translate3d(0px, 0px, 0px)"
-        >
-          <defs>
-            <clipPath id="__lottie_element_130">
-              <rect width="38" height="32" x="0" y="0"></rect>
-            </clipPath>
-          </defs>
-          <g clip-path="url(#__lottie_element_130)">
-            <g
-              transform="matrix(0.9865000247955322,0,0,0.9865000247955322,0.28017616271972656,0.15089035034179688)"
-              opacity="1"
-              style="display: block"
-            >
+      <div class="content-time">
+        <p class="text-time-title">Falta</p>
+        <div class="content-time-countdown">
+          <div class="content-type-time">
+            <span class="text-time">
+              <span :style="daysStyle"></span>
+            </span>
+            <span class="sub-text">Días</span>
+          </div>
+
+          <div class="content-type-time">
+            <span class="text-time">
+              <span :style="hoursStyle"></span>
+            </span>
+            <span class="sub-text">Hrs</span>
+          </div>
+          <div class="content-type-time">
+            <span class="text-time">
+              <span :style="minutesStyle"></span>
+            </span>
+            <span class="sub-text">Min</span>
+          </div>
+          <div class="flex flex-col">
+            <span class="text-time">
+              <span :style="secondsStyle"></span>
+            </span>
+            <span class="sub-text">Seg</span>
+          </div>
+        </div>
+        <div class="content-svg-heart">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 38 32"
+            preserveAspectRatio="xMidYMid meet"
+            class="animate-pulse"
+            style="transform: translate3d(0px, 0px, 0px)"
+          >
+            <defs>
+              <clipPath id="__lottie_element_130">
+                <rect width="38" height="32" x="0" y="0"></rect>
+              </clipPath>
+            </defs>
+            <g clip-path="url(#__lottie_element_130)">
               <g
+                transform="matrix(0.9865000247955322,0,0,0.9865000247955322,0.28017616271972656,0.15089035034179688)"
                 opacity="1"
-                transform="matrix(1,0,0,1,18.97599983215332,16.06599998474121)"
+                style="display: block"
               >
-                <path
-                  fill="rgb(208,136,142)"
-                  fill-opacity="1"
-                  d=" M-1.1369999647140503,15.593999862670898 C-0.7720000147819519,15.741999626159668 -0.38600000739097595,15.815999984741211 0.0010000000474974513,15.815999984741211 C0.3869999945163727,15.815999984741211 0.7730000019073486,15.741999626159668 1.1369999647140503,15.593999862670898 C1.8550000190734863,15.300999641418457 18.725000381469727,8.284000396728516 18.725000381469727,-4.073999881744385 C18.725000381469727,-10.550000190734863 13.385000228881836,-15.815999984741211 6.820000171661377,-15.815999984741211 C4.349999904632568,-15.815999984741211 1.9789999723434448,-15.067000389099121 0.0010000000474974513,-13.70199966430664 C-1.9780000448226929,-15.067000389099121 -4.348999977111816,-15.815999984741211 -6.817999839782715,-15.815999984741211 C-13.383999824523926,-15.815999984741211 -18.725000381469727,-10.550000190734863 -18.725000381469727,-4.073999881744385 C-18.725000381469727,8.284000396728516 -1.8550000190734863,15.300999641418457 -1.1369999647140503,15.593999862670898z"
-                ></path>
+                <g
+                  opacity="1"
+                  transform="matrix(1,0,0,1,18.97599983215332,16.06599998474121)"
+                >
+                  <path
+                    fill="rgb(208,136,142)"
+                    fill-opacity="1"
+                    d=" M-1.1369999647140503,15.593999862670898 C-0.7720000147819519,15.741999626159668 -0.38600000739097595,15.815999984741211 0.0010000000474974513,15.815999984741211 C0.3869999945163727,15.815999984741211 0.7730000019073486,15.741999626159668 1.1369999647140503,15.593999862670898 C1.8550000190734863,15.300999641418457 18.725000381469727,8.284000396728516 18.725000381469727,-4.073999881744385 C18.725000381469727,-10.550000190734863 13.385000228881836,-15.815999984741211 6.820000171661377,-15.815999984741211 C4.349999904632568,-15.815999984741211 1.9789999723434448,-15.067000389099121 0.0010000000474974513,-13.70199966430664 C-1.9780000448226929,-15.067000389099121 -4.348999977111816,-15.815999984741211 -6.817999839782715,-15.815999984741211 C-13.383999824523926,-15.815999984741211 -18.725000381469727,-10.550000190734863 -18.725000381469727,-4.073999881744385 C-18.725000381469727,8.284000396728516 -1.8550000190734863,15.300999641418457 -1.1369999647140503,15.593999862670898z"
+                  ></path>
+                </g>
               </g>
             </g>
-          </g>
-        </svg>
+          </svg>
+        </div>
       </div>
-    </div>
-    <div class="content-separator-md">
-      <img
-        decoding="async"
-        class="w-full z-50"
-        src="https://www.fixdate.io/modelo-invitacion/71/img/curva01.svg"
-        alt=""
-        loading=""
-      />
+      <div class="content-separator-md">
+        <img
+          decoding="async"
+          class="w-full z-50"
+          src="https://www.fixdate.io/modelo-invitacion/71/img/curva01.svg"
+          alt=""
+          loading=""
+        />
+      </div>
     </div>
   </div>
 </template>
@@ -141,6 +143,9 @@ onUnmounted(() => {
   .content-popup {
     background-color: #fef7f9;
     @apply w-full flex flex-col justify-center items-center;
+  }
+  .subcontent-popup {
+    @apply w-9/0 flex flex-col justify-center items-center;
   }
   .content-image-time {
     @apply w-full flex flex-col justify-center items-center;
@@ -206,8 +211,8 @@ onUnmounted(() => {
   }
 }
 @media (min-width: 768px) {
-  .content-popup {
-    @apply mt-16;
+  .subcontent-popup {
+    @apply w-full mt-16;
   }
   .content-separator-md {
     @apply w-full flex z-10;

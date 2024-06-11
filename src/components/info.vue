@@ -75,7 +75,7 @@
           </div>
         </div>
       </div>
-
+      <!-- Right -->
       <div class="content-celebration">
         <div class="content-line-ceremony">
           <img
@@ -89,7 +89,7 @@
         <div class="content-gif-ceremony">
           <img
             decoding="async"
-            class="w-full z-50"
+            class="w-full z-10"
             src="../assets/Svg/celebration.svg"
             alt=""
             loading=""
@@ -100,7 +100,7 @@
             <div class="subcontent-lazos">
               <img
                 decoding="async"
-                class="w-auto z-50"
+                class="w-auto z-40"
                 src="https://www.fixdate.io/modelo-invitacion/71/img/img_cinta01.svg"
                 alt=""
                 loading=""
@@ -130,11 +130,7 @@
               Finca La Esmeralda<br />Vereda La Llanerita
             </p>
 
-            <a
-              class="button-dates"
-              target="_blank"
-              href="https://maps.app.goo.gl/uVjZF3agffGheA9X9?g_st=ic"
-            >
+            <a class="button-dates" target="_blank" href="">
               <p class="text-button">Como llegar</p>
             </a>
           </div>

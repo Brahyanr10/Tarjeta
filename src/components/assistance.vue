@@ -127,29 +127,15 @@
     background-color: #fef7f9;
     @apply w-full flex flex-col justify-center items-center -mb-[30%];
   }
-  .content-information {
-    @apply w-full flex flex-col justify-center items-center;
-  }
   .content-title {
     @apply w-full flex flex-row justify-center items-center pt-5 pb-10;
   }
   .subcontent-lazos {
-    @apply w-[6px] h-[50%] flex flex-col justify-center items-center;
+    @apply w-[8px] h-[50%] flex flex-col justify-center items-center;
   }
   .text-title {
     font-family: 'Playfair Display', Serif;
-    @apply w-auto flex flex-col justify-center items-center font-bold text-white text-[16px] bg-[#9A8479] py-1 px-4 z-50;
-  }
-  .content-dates {
-    @apply w-full flex flex-col justify-center items-center pb-10;
-  }
-  .text-date {
-    font-family: 'Playfair Display', Serif;
-    @apply w-auto text-[25px] text-[#9A8479] font-bold pb-5;
-  }
-  .subtext-date {
-    font-family: 'Quicksand', Sans-Serif;
-    @apply w-auto flex flex-col text-[18px] text-[#716558] text-center;
+    @apply w-auto flex flex-col justify-center items-center font-bold text-white text-[17px] bg-[#9A8479] py-1 px-4 z-50;
   }
   .button-confirmation {
     @apply w-auto text-[18px] text-white bg-[#D0888E] rounded-full py-[10px] px-12 shadow-md cursor-pointer hover:bg-[#c47f85] mt-10;
@@ -163,7 +149,13 @@
 }
 @media (min-width: 375px) {
   .subcontent-lazos {
-    @apply w-[8px];
+    @apply w-[9px];
+  }
+  .content-title {
+    @apply py-5;
+  }
+  .text-title {
+    @apply text-[19px];
   }
 }
 @media (min-width: 425px) {
