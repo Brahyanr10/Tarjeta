@@ -1,8 +1,10 @@
 <script setup>
+import assitancepopups from '../components/assistancePopUp.vue';
 import { ref } from 'vue';
 
-const checkCeremony = ref(0);
-const checkCelebration = ref(0);
+const checkCeremony = ref(false);
+const checkCelebration = ref(false);
+const checkAssitance = ref(false);
 </script>
 <template>
   <div class="content-popup">
@@ -27,7 +29,7 @@ const checkCelebration = ref(0);
 
     <h1 class="text-confirmation">Confirma tu asistencia!</h1>
     <p class="text-subconfirmation">
-      Seleeciona las opciones a las que vas a asistir
+      Selecciona los lugares a los que vas a asistir
     </p>
     <div class="content-grid">
       <div class="content-ceremony">
@@ -52,7 +54,7 @@ const checkCelebration = ref(0);
             />
           </div>
         </div>
-        <div class="content-gif-ceremony" v-if="checkCeremony == 0">
+        <div class="content-gif-ceremony" v-if="checkCeremony == false">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 270 270"
@@ -122,7 +124,7 @@ const checkCelebration = ref(0);
                   transform="matrix(1,0,0,1,116.1760025024414,116.1760025024414)"
                 >
                   <path
-                    @click="checkCeremony++"
+                    @click="checkCeremony = true"
                     fill-opacity="1"
                     d=" M116.1760025024414,0 C116.1760025024414,64.16200256347656 64.16200256347656,116.1760025024414 0,116.1760025024414 C-64.16200256347656,116.1760025024414 -116.1760025024414,64.16200256347656 -116.1760025024414,0 C-116.1760025024414,-64.16200256347656 -64.16200256347656,-116.1760025024414 0,-116.1760025024414 C64.16200256347656,-116.1760025024414 116.1760025024414,-64.16200256347656 116.1760025024414,0z"
                   ></path>
@@ -215,7 +217,7 @@ const checkCelebration = ref(0);
             </g>
           </svg>
         </div>
-        <div class="content-gif-ceremony" v-if="checkCeremony > 0">
+        <div class="content-gif-ceremony" v-if="checkCeremony == true">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 270 270"
@@ -284,7 +286,7 @@ const checkCelebration = ref(0);
                   transform="matrix(1,0,0,1,116.1760025024414,116.1760025024414)"
                 >
                   <path
-                    @click="checkCeremony = 0"
+                    @click="checkCeremony = false"
                     stroke="#2fc91e"
                     stroke-width=" 2px"
                     fill-opacity="1"
@@ -403,7 +405,7 @@ const checkCelebration = ref(0);
             />
           </div>
         </div>
-        <div class="content-gif-ceremony" v-if="checkCelebration == 0">
+        <div class="content-gif-ceremony" v-if="checkCelebration == false">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 270 270"
@@ -472,7 +474,7 @@ const checkCelebration = ref(0);
                   transform="matrix(1,0,0,1,116.1760025024414,116.1760025024414)"
                 >
                   <path
-                    @click="checkCelebration++"
+                    @click="checkCelebration = true"
                     fill-opacity="1"
                     d=" M116.1760025024414,0 C116.1760025024414,64.16200256347656 64.16200256347656,116.1760025024414 0,116.1760025024414 C-64.16200256347656,116.1760025024414 -116.1760025024414,64.16200256347656 -116.1760025024414,0 C-116.1760025024414,-64.16200256347656 -64.16200256347656,-116.1760025024414 0,-116.1760025024414 C64.16200256347656,-116.1760025024414 116.1760025024414,-64.16200256347656 116.1760025024414,0z"
                   ></path>
@@ -784,7 +786,7 @@ const checkCelebration = ref(0);
             </g>
           </svg>
         </div>
-        <div class="content-gif-ceremony" v-if="checkCelebration > 0">
+        <div class="content-gif-ceremony" v-if="checkCelebration == true">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 270 270"
@@ -853,7 +855,7 @@ const checkCelebration = ref(0);
                   transform="matrix(1,0,0,1,116.1760025024414,116.1760025024414)"
                 >
                   <path
-                    @click="checkCelebration = 0"
+                    @click="checkCelebration = false"
                     stroke="#2fc91e"
                     stroke-width=" 2px"
                     fill-opacity="1"
@@ -1169,13 +1171,16 @@ const checkCelebration = ref(0);
         </div>
       </div>
     </div>
-    <a
-      class="button-confirmation"
-      target="_blank"
-      href="https://maps.app.goo.gl/GABukPdXuCTyQwBF6?g_st=ic"
-    >
+    <button class="button-confirmation" @click="checkAssitance = true">
       <p class="text-button">Confirmar asistencia</p>
-    </a>
+    </button>
+  </div>
+  <p>{{ checkAssitance }}</p>
+  <div class="popupassistance" v-if="checkAssitance == true">
+    <assitancepopups
+      :ceremony="checkCeremony"
+      :celebration="checkCelebration"
+    />
   </div>
 </template>
 <style scoped>
@@ -1196,7 +1201,7 @@ const checkCelebration = ref(0);
   }
   .text-subconfirmation {
     font-family: 'Playfair Display', Serif;
-    @apply w-9/0 flex flex-col justify-center items-center text-center text-[12px];
+    @apply w-9/0 flex flex-col justify-center items-center text-center text-[14px] text-[#9A8479];
   }
   .content-grid {
     background-color: #fef7f9;
@@ -1237,6 +1242,9 @@ const checkCelebration = ref(0);
   .content-celebration {
     @apply w-full flex flex-col justify-center items-center pt-0;
   }
+  .popupassistance {
+    @apply w-full;
+  }
 }
 @media (min-width: 375px) {
   .subcontent-lazos {
@@ -1255,6 +1263,12 @@ const checkCelebration = ref(0);
   }
   .text-title {
     @apply text-[22px];
+  }
+  .text-confirmation {
+    @apply text-[35px];
+  }
+  .text-subconfirmation {
+    @apply text-[16px];
   }
 }
 

@@ -28,7 +28,7 @@ const props = defineProps({
 @media (min-width: 0px) {
   .content-popup {
     background-color: #fef7f9;
-    @apply w-9/0 min-h-screen flex flex-col justify-center items-center;
+    @apply w-full min-h-screen flex flex-col justify-center items-center;
   }
   .image {
     @apply w-8/0;
@@ -39,7 +39,7 @@ const props = defineProps({
   }
   .text-names {
     font-family: 'Playfair Display', Serif;
-    @apply w-8/0 flex flex-col justify-center items-center text-[#D0888E] text-[100%] leading-[70px] mb-[20px] font-bold;
+    @apply w-9/0 flex flex-col justify-center items-center text-[#D0888E] text-[28px] leading-[70px] mb-[20px] font-bold;
   }
   .button-in {
     font-family: 'Quicksand', Sans-Serif;
@@ -49,7 +49,7 @@ const props = defineProps({
     @apply w-full;
   }
 }
-@media (min-width: 320px) {
+@media (min-width: 325px) {
   .content-popup {
     background-color: #fef7f9;
     @apply w-full h-max flex flex-col justify-center items-center;
@@ -58,16 +58,13 @@ const props = defineProps({
     @apply w-8/0;
   }
   .text-wellcome {
-    font-family: 'Quicksand', Sans-Serif;
-    @apply w-9/0 flex flex-col justify-center items-center text-[#9a8479] text-[100%] leading-[30px] pt-5;
+    @apply text-[100%] pt-5;
   }
   .text-names {
-    font-family: 'Playfair Display', Serif;
-    @apply w-8/0 flex flex-col justify-center items-center text-[#D0888E] text-[30px] leading-[70px] mb-[20px] font-bold;
+    @apply text-[30px];
   }
   .button-in {
-    font-family: 'Quicksand', Sans-Serif;
-    @apply w-auto py-[3%] px-[10%] rounded-full bg-[#D0888E] text-white shadow-md cursor-pointer;
+    @apply py-[3%] px-[10%];
   }
   .separator {
     @apply w-full pt-[40px];
@@ -82,16 +79,13 @@ const props = defineProps({
     @apply w-8/0;
   }
   .text-wellcome {
-    font-family: 'Quicksand', Sans-Serif;
-    @apply w-9/0 flex flex-col justify-center items-center text-[#9a8479] text-[20px] leading-[30px];
+    @apply text-[20px] leading-[30px];
   }
   .text-names {
-    font-family: 'Playfair Display', Serif;
-    @apply w-9/0 flex flex-col justify-center items-center text-[#D0888E] text-[40px] leading-[70px] mb-[20px] font-bold;
+    @apply text-[40px] leading-[70px] mb-[20px] font-bold;
   }
   .button-in {
-    font-family: 'Quicksand', Sans-Serif;
-    @apply w-auto py-2 px-10 rounded-full bg-[#D0888E] text-white shadow-md cursor-pointer;
+    @apply py-2 px-10;
   }
   .separator {
     @apply w-full;
@@ -107,16 +101,13 @@ const props = defineProps({
     @apply w-[600px];
   }
   .text-wellcome {
-    font-family: 'Quicksand', Sans-Serif;
-    @apply w-9/0 flex flex-col justify-center items-center text-[#9a8479] text-[20px] leading-[30px];
+    @apply text-[20px] leading-[30px];
   }
   .text-names {
-    font-family: 'Playfair Display', Serif;
-    @apply w-9/0 flex flex-col justify-center items-center text-[#D0888E] text-[40px] leading-[70px] mb-[20px] font-bold;
+    @apply text-[40px] leading-[70px] mb-[20px];
   }
   .button-in {
-    font-family: 'Quicksand', Sans-Serif;
-    @apply w-auto py-2 px-10 rounded-full bg-[#D0888E] text-white shadow-md cursor-pointer;
+    @apply py-2 px-10;
   }
 }
 </style>
