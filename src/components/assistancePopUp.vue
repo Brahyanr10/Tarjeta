@@ -1,5 +1,6 @@
 <script setup>
 // import Family from '../assets/Assistants/Assistants.js';
+import { ref } from 'vue';
 
 const props = defineProps({
   // ceremony: false,
@@ -10,6 +11,8 @@ const props = defineProps({
     required: true,
   },
 });
+const confirm1 = ref(false);
+console.log(confirm1);
 </script>
 <template>
   <div class="content-popup">
@@ -49,6 +52,7 @@ const props = defineProps({
             <div class="content-radio">
               <div class="subcontent-radio-button">
                 <input
+                  @click="confirm1 = true"
                   id="default-radio-1"
                   type="radio"
                   value=""
@@ -58,6 +62,7 @@ const props = defineProps({
               </div>
               <div class="subcontent-radio-button">
                 <input
+                  @click="confirm1 = false"
                   checked
                   id="default-radio-2"
                   type="radio"
@@ -174,7 +179,7 @@ const props = defineProps({
           </div>
         </div>
       </div>
-      <button type="submit" class="button-submit">Confirmar</button>
+      <button class="button-submit">Confirmar</button>
     </form>
   </div>
 </template>
