@@ -1,7 +1,7 @@
 assistantsData
 <script setup>
 import { onBeforeMount, ref } from 'vue';
-import assistantsData from '../assets/Assistants/Assistants';
+import assistantsData from '../assets/Family/Assistants';
 const props = defineProps({
   setOpen: {
     type: Function,
