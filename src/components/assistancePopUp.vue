@@ -229,10 +229,10 @@ console.log(confirm1);
     @apply w-full flex flex-row justify-center items-center;
   }
   .radio-button-confirm {
-    @apply w-[12px] h-[12px] text-[#D0888E] focus:ring-[#D0888E];
+    @apply w-[14px] h-[14px] text-[#D0888E] focus:ring-[#D0888E];
   }
   .radio-button-noconfirm {
-    @apply w-[12px] h-[12px] text-[#D0888E] focus:ring-[#D0888E];
+    @apply w-[14px] h-[14px] text-[#D0888E] focus:ring-[#D0888E];
   }
   .text-radio-button {
     font-family: 'Quicksand', Sans-Serif;
