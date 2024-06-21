@@ -7,7 +7,7 @@ import assistance from './components/assistance.vue';
 import { ref } from 'vue';
 
 const isView = ref(true);
-const pathname = window.location.pathname;
+const pathname = window.location;
 console.log(pathname);
 
 const changeModalState = (value) => {
