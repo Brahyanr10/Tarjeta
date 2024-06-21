@@ -5,6 +5,86 @@ const props = defineProps({
     required: true,
   },
 });
+const datos = {
+  data() {
+    return {
+      Familias: [
+        {
+          id: FV385,
+          name1: 'Fernando Villamil',
+          name2: 'Pilar Rodriguez',
+          hijos: true,
+          hijo1: 'Jonathan Villamil',
+          hijo2: '',
+        },
+        {
+          id: FV534,
+          name1: 'Juan Gonzalez',
+          name2: 'Yira Rodriguez',
+          hijos: true,
+          hijo1: 'Mariana Gonzalez',
+          hijo2: 'Cristian Gonzalez',
+        },
+        {
+          id: FV716,
+          name1: 'Arecesio Rodriguez',
+          name2: 'Myriam Moreno',
+          hijos: false,
+          hijo1: '',
+          hijo2: '',
+        },
+        {
+          id: FV896,
+          name1: 'Juan Rodriguez',
+          name2: 'Lorena Acuña',
+          hijos: false,
+          hijo1: '',
+          hijo2: '',
+        },
+        {
+          id: FV485,
+          name1: 'Javier Rodriguez',
+          name2: 'Jenny Paez',
+          hijos: true,
+          hijo1: 'Daniel Rodriguez',
+          hijo2: '',
+        },
+        {
+          id: FV344,
+          name1: 'Mary Vega',
+          name2: 'Natalia Molano',
+          hijos: false,
+          hijo1: '',
+          hijo2: '',
+        },
+        {
+          id: FV413,
+          name1: 'Nancy Quiñonez',
+          name2: '',
+          hijos: false,
+          hijo1: '',
+          hijo2: '',
+        },
+        {
+          id: FV22,
+          name1: 'Cristian Duran',
+          name2: 'Carol Quiñonez',
+          hijos: false,
+          hijo1: '',
+          hijo2: '',
+        },
+        {
+          id: FV155,
+          name1: 'Cristian Arciniegas',
+          name2: 'Isabel ',
+          hijos: false,
+          hijo1: '',
+          hijo2: '',
+        },
+      ],
+    };
+  },
+};
 </script>
 
 <template>

@@ -7,6 +7,7 @@ import assistance from './components/assistance.vue';
 import { ref } from 'vue';
 
 const isView = ref(true);
+const pathname = window.location.pathname;
 
 const changeModalState = (value) => {
   isView.value = value;
@@ -15,6 +16,7 @@ const changeModalState = (value) => {
 
 <template>
   <div class="content-main">
+    <p>{{ pathname }}</p>
     <initModal v-if="isView" :setOpen="changeModalState" />
     <div v-else class="subcontent-main">
       <card class="z-10" />
@@ -28,6 +30,7 @@ const changeModalState = (value) => {
 <style scoped>
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Petit+Formal+Script&display=swap');
 .content-main {
   /* background-color: #fef7f9; */
   @apply w-full flex flex-col justify-center items-center;
