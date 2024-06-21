@@ -8,6 +8,7 @@ import { ref } from 'vue';
 
 const isView = ref(true);
 const pathname = window.location.pathname;
+console.log(pathname);
 
 const changeModalState = (value) => {
   isView.value = value;

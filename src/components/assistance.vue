@@ -2,8 +2,6 @@
 import assitancepopups from '../components/assistancePopUp.vue';
 import { ref } from 'vue';
 
-const checkCeremony = ref(false);
-const checkCelebration = ref(false);
 const checkAssitance = ref(false);
 </script>
 <template>
@@ -122,7 +120,6 @@ const checkAssitance = ref(false);
                   transform="matrix(1,0,0,1,116.1760025024414,116.1760025024414)"
                 >
                   <path
-                    @click="checkCeremony = true"
                     fill-opacity="1"
                     d=" M116.1760025024414,0 C116.1760025024414,64.16200256347656 64.16200256347656,116.1760025024414 0,116.1760025024414 C-64.16200256347656,116.1760025024414 -116.1760025024414,64.16200256347656 -116.1760025024414,0 C-116.1760025024414,-64.16200256347656 -64.16200256347656,-116.1760025024414 0,-116.1760025024414 C64.16200256347656,-116.1760025024414 116.1760025024414,-64.16200256347656 116.1760025024414,0z"
                   ></path>
