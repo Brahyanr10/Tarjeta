@@ -47,7 +47,7 @@ onUnmounted(() => {
           class="w-full z-50"
           src="https://www.fixdate.io/modelo-invitacion/71/img/contador.png"
           alt=""
-          loading=""
+          loading="lazy"
         />
       </div>
       <div class="content-time">
@@ -119,7 +119,7 @@ onUnmounted(() => {
           class="w-full z-50"
           src="https://www.fixdate.io/modelo-invitacion/71/img/curva01.svg"
           alt=""
-          loading=""
+          loading="lazy"
         />
       </div>
     </div>

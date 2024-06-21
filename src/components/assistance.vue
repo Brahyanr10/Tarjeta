@@ -19,7 +19,7 @@ const checkAssitance = ref(false);
         class="w-full z-10"
         src="https://www.fixdate.io/modelo-invitacion/71/img/lineas01.svg"
         alt=""
-        loading=""
+        loading="lazy"
       />
     </div>
     <div class="content-line-flower">
@@ -28,7 +28,7 @@ const checkAssitance = ref(false);
         class="w-full z-10"
         src="https://www.fixdate.io/modelo-invitacion/71/img/flores_Grupo04.png"
         alt=""
-        loading=""
+        loading="lazy"
       />
     </div>
 
@@ -43,7 +43,7 @@ const checkAssitance = ref(false);
               class="w-auto z-50"
               src="https://www.fixdate.io/modelo-invitacion/71/img/img_cinta01.svg"
               alt=""
-              loading=""
+              loading="lazy"
             />
           </div>
           <p class="text-title">Ceremonia</p>
@@ -53,7 +53,7 @@ const checkAssitance = ref(false);
               class="w-auto z-50"
               src="https://www.fixdate.io/modelo-invitacion/71/img/img_cinta02.svg"
               alt=""
-              loading=""
+              loading="lazy"
             />
           </div>
         </div>
@@ -63,7 +63,7 @@ const checkAssitance = ref(false);
             class="w-auto z-50"
             src="../assets/Svg/ceremonywhite.svg"
             alt=""
-            loading=""
+            loading="lazy"
           />
         </div>
       </div>
@@ -76,7 +76,7 @@ const checkAssitance = ref(false);
               class="w-auto z-50"
               src="https://www.fixdate.io/modelo-invitacion/71/img/img_cinta01.svg"
               alt=""
-              loading=""
+              loading="lazy"
             />
           </div>
           <p class="text-title">Celebración</p>
@@ -86,7 +86,7 @@ const checkAssitance = ref(false);
               class="w-auto z-50"
               src="https://www.fixdate.io/modelo-invitacion/71/img/img_cinta02.svg"
               alt=""
-              loading=""
+              loading="lazy"
             />
           </div>
         </div>
@@ -96,7 +96,7 @@ const checkAssitance = ref(false);
             class="w-auto z-50"
             src="../assets/Svg/celebrationwhite.svg"
             alt=""
-            loading=""
+            loading="lazy"
           />
         </div>
       </div>

@@ -22,7 +22,7 @@ console.log(confirm1);
         class="flowers"
         src="https://www.fixdate.io/modelo-invitacion/71/img/flores_Grupo04.png"
         alt=""
-        loading=""
+        loading="lazy"
       />
     </div>
     <div class="content-gif-ceremony">
@@ -31,7 +31,7 @@ console.log(confirm1);
         class="svg-celebration"
         src="../assets/Svg/celebration.svg"
         alt=""
-        loading=""
+        loading="lazy"
       />
     </div>
     <p class="text-title">¿Asistes a la celebración?</p>
@@ -229,10 +229,10 @@ console.log(confirm1);
     @apply w-full flex flex-row justify-center items-center;
   }
   .radio-button-confirm {
-    @apply w-[14px] h-[14px] text-[#D0888E] focus:ring-[#D0888E];
+    @apply w-[16px] h-[16px] text-[#D0888E] focus:ring-[#D0888E];
   }
   .radio-button-noconfirm {
-    @apply w-[14px] h-[14px] text-[#D0888E] focus:ring-[#D0888E];
+    @apply w-[16px] h-[16px] text-[#D0888E] focus:ring-[#D0888E];
   }
   .text-radio-button {
     font-family: 'Quicksand', Sans-Serif;

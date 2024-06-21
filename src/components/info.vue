@@ -7,7 +7,7 @@
         class="w-full z-10"
         src="https://www.fixdate.io/modelo-invitacion/71/img/lineas01.svg"
         alt=""
-        loading=""
+        loading="lazy"
       />
     </div>
     <div class="content-grid">
@@ -18,7 +18,7 @@
             class="w-full z-10"
             src="https://www.fixdate.io/modelo-invitacion/71/img/lineas01.svg"
             alt=""
-            loading=""
+            loading="lazy"
           />
         </div>
         <div class="content-gif-ceremony">
@@ -27,7 +27,7 @@
             class="w-full z-50"
             src="../assets/Svg/ceremony.svg"
             alt=""
-            loading=""
+            loading="lazy"
           />
         </div>
         <div class="content-information">
@@ -38,7 +38,7 @@
                 class="w-auto z-50"
                 src="https://www.fixdate.io/modelo-invitacion/71/img/img_cinta01.svg"
                 alt=""
-                loading=""
+                loading="lazy"
               />
             </div>
             <p class="text-title">Ceremonia</p>
@@ -48,7 +48,7 @@
                 class="w-auto z-50"
                 src="https://www.fixdate.io/modelo-invitacion/71/img/img_cinta02.svg"
                 alt=""
-                loading=""
+                loading="lazy"
               />
             </div>
           </div>
@@ -83,7 +83,7 @@
             class="w-full z-10"
             src="https://www.fixdate.io/modelo-invitacion/71/img/lineas01.svg"
             alt=""
-            loading=""
+            loading="lazy"
           />
         </div>
         <div class="content-gif-ceremony">
@@ -92,7 +92,7 @@
             class="w-full z-10"
             src="../assets/Svg/celebration.svg"
             alt=""
-            loading=""
+            loading="lazy"
           />
         </div>
         <div class="content-information">
@@ -103,7 +103,7 @@
                 class="w-auto z-40"
                 src="https://www.fixdate.io/modelo-invitacion/71/img/img_cinta01.svg"
                 alt=""
-                loading=""
+                loading="lazy"
               />
             </div>
             <p class="text-title">Celebración</p>
@@ -113,7 +113,7 @@
                 class="w-auto z-50"
                 src="https://www.fixdate.io/modelo-invitacion/71/img/img_cinta02.svg"
                 alt=""
-                loading=""
+                loading="lazy"
               />
             </div>
           </div>
