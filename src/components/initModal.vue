@@ -1,6 +1,7 @@
+assistantsData
 <script setup>
 import { onBeforeMount, ref } from 'vue';
-import AssistantsData from '../assets/Assistants/Assistants';
+import assistantsData from '../assets/Assistants/Assistants';
 const props = defineProps({
   setOpen: {
     type: Function,
@@ -15,7 +16,7 @@ const props = defineProps({
 const searchParams = new URLSearchParams(window.location.search);
 const id = searchParams.get('id');
 const stateFamily = ref(false);
-const validation = ref(AssistantsData);
+const validation = ref(assistantsData);
 
 const findId = () => {
   if (validation.value) {
