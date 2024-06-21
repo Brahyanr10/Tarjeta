@@ -7,8 +7,11 @@ import assistance from './components/assistance.vue';
 import { ref } from 'vue';
 
 const isView = ref(true);
+
 const pathname = window.location;
-console.log(pathname);
+const search = pathname.search.split('?');
+const id = search[1];
+console.log('id: ', id);
 
 const changeModalState = (value) => {
   isView.value = value;
@@ -17,7 +20,6 @@ const changeModalState = (value) => {
 
 <template>
   <div class="content-main">
-    <p>{{ pathname }}</p>
     <initModal v-if="isView" :setOpen="changeModalState" />
     <div v-else class="subcontent-main">
       <card class="z-10" />

@@ -130,7 +130,11 @@
               Finca La Esmeralda<br />Vereda La Llanerita
             </p>
 
-            <a class="button-dates" target="_blank" href="">
+            <a
+              class="button-dates"
+              target="_blank"
+              href="https://maps.app.goo.gl/ziezeGukJpoxLNSL6?g_st=com.google.maps.preview.copy "
+            >
               <p class="text-button">Como llegar</p>
             </a>
           </div>

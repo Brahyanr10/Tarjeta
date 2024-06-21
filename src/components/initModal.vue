@@ -5,11 +5,9 @@ const props = defineProps({
     required: true,
   },
 });
-const datos = {
-  data() {
-    return {};
-  },
-};
+const pathname = window.location;
+const search = pathname.search.split('?');
+const id = search[1];
 </script>
 
 <template>
@@ -25,7 +23,10 @@ const datos = {
     </div>
     <h2 class="text-wellcome">Bienvenidos a la invitación de</h2>
     <h1 class="text-names">Brahyan & Ximena</h1>
-    <button class="button-in" @click="setOpen(false)">Ingresar</button>
+    <button class="button-in" v-if="id" @click="setOpen(false)">
+      Ingresar
+    </button>
+    <p v-else class="text-wellcome">Por favor ingresa con el link enviado</p>
   </div>
 </template>
 
