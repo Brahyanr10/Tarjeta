@@ -1,6 +1,13 @@
 <script setup>
-import assitancepopups from '../components/assistancePopUp.vue';
+import assistancePopups from '../components/assistancePopUp.vue';
 import { ref } from 'vue';
+
+const props = defineProps({
+  dataFamily: {
+    type: Object,
+    required: true,
+  },
+});
 
 const checkAssitance = ref(false);
 </script>
@@ -97,13 +104,24 @@ const checkAssitance = ref(false);
     <button class="button-confirmation" @click="checkAssitance = true">
       <p class="text-button">Confirmar asistencia</p>
     </button>
-  </div>
-  <div class="popupassistance" v-if="checkAssitance == true">
-    <assitancepopups />
+
+    <div class="popupassistance" v-if="checkAssitance == true">
+      <div class="content-close">
+        <button class="closePopUp" @click="checkAssitance = false">X</button>
+      </div>
+      <assistancePopups :data-family="dataFamily" />
+    </div>
   </div>
 </template>
 <style scoped>
 @media (min-width: 0px) {
+  .content-close {
+    @apply w-9/5 flex flex-col justify-center items-end z-[9999999] -mb-[25px];
+  }
+  .closePopUp {
+    font-family: 'Quicksand', Sans-Serif;
+    @apply w-auto flex flex-col justify-center items-center px-[10px] rounded-[50%] bg-[#D0888E] text-white z-50 text-[24px] font-medium;
+  }
   .content-popup {
     background-color: #fef7f9;
     @apply w-full flex flex-col justify-center items-center pt-10 pb-10;
@@ -156,7 +174,7 @@ const checkAssitance = ref(false);
     @apply w-full flex flex-col justify-center items-center pt-0;
   }
   .popupassistance {
-    @apply w-full;
+    @apply w-full fixed top-0 min-h-full flex flex-col justify-center items-center z-[50] bg-[#FDD0DA];
   }
 }
 @media (min-width: 375px) {

@@ -1,7 +1,14 @@
 <script setup>
-defineProps({
-  ceremony: false,
-  celebration: false,
+// import Family from '../assets/Assistants/Assistants.js';
+
+const props = defineProps({
+  // ceremony: false,
+  // celebration: false,
+  checkAssitances: false,
+  dataFamily: {
+    type: Object,
+    required: true,
+  },
 });
 </script>
 <template>
@@ -24,85 +31,183 @@ defineProps({
         loading=""
       />
     </div>
-    <div class="content-radio-form">
-      <p class="text-title">¡Confirma tu Asistencia!</p>
-      <div
-        class="w-full flex flex-col justify-center items-center"
-        v-if="ceremony == true || celebration == true"
-      >
-        <p class="text-title-selection">Escogiste</p>
-        <div class="content-selection">
-          <p class="text-selection" v-if="ceremony == true">Ceremonia</p>
-          <p class="text-selection" v-if="celebration == true">Celebración</p>
-        </div>
-      </div>
-      <div class="content-radio">
-        <div class="subcontent-radio-button">
-          <input
-            id="default-radio-1"
-            type="radio"
-            value=""
-            name="default-radio"
-            class="radio-button-confirm"
-          />
-          <label for="default-radio-1" class="text-radio-button"
-            >¡Si, Confirmo!</label
-          >
-        </div>
-        <div class="subcontent-radio-button">
-          <input
-            checked
-            id="default-radio-2"
-            type="radio"
-            value=""
-            name="default-radio"
-            class="radio-button-noconfirm"
-          />
-          <label for="default-radio-2" class="text-radio-button"
-            >No, Confirmo</label
-          >
-        </div>
-      </div>
-    </div>
-
+    <p class="text-title">¿Asistes a la celebración?</p>
     <form class="form-content">
       <div class="content-form">
-        <input
-          type="text"
-          id="first_name"
-          class="text-input-form"
-          placeholder="Ingresa tu nombre"
-          required
-        />
-
-        <button type="submit" class="button-submit">Confirmar</button>
+        <div class="content-check">
+          <p class="text-subtitle">Asistentes</p>
+          <div class="content-confirm">
+            <p class="text-subtitle-check">Sí</p>
+            <p class="text-subtitle-check">No</p>
+          </div>
+        </div>
+        <div class="content-family-info">
+          <div class="content-check" v-if="dataFamily.name1">
+            <p class="text-radio-button">
+              {{ dataFamily.name1 }}
+            </p>
+            <div class="content-radio">
+              <div class="subcontent-radio-button">
+                <input
+                  id="default-radio-1"
+                  type="radio"
+                  value=""
+                  name="default-radio1"
+                  class="radio-button-confirm"
+                />
+              </div>
+              <div class="subcontent-radio-button">
+                <input
+                  checked
+                  id="default-radio-2"
+                  type="radio"
+                  value=""
+                  name="default-radio1"
+                  class="radio-button-noconfirm"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="content-check" v-if="dataFamily.name2">
+            <p class="text-radio-button">
+              {{ dataFamily.name2 }}
+            </p>
+            <div class="content-radio">
+              <div class="subcontent-radio-button">
+                <input
+                  id="default-radio-3"
+                  type="radio"
+                  value=""
+                  name="default-radio2"
+                  class="radio-button-confirm"
+                />
+              </div>
+              <div class="subcontent-radio-button">
+                <input
+                  checked
+                  id="default-radio-4"
+                  type="radio"
+                  value=""
+                  name="default-radio2"
+                  class="radio-button-noconfirm"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="content-check" v-if="dataFamily.hijo1">
+            <p class="text-radio-button">
+              {{ dataFamily.hijo1 }}
+            </p>
+            <div class="content-radio">
+              <div class="subcontent-radio-button">
+                <input
+                  id="default-radio-5"
+                  type="radio"
+                  value=""
+                  name="default-radio3"
+                  class="radio-button-confirm"
+                />
+              </div>
+              <div class="subcontent-radio-button">
+                <input
+                  checked
+                  id="default-radio-6"
+                  type="radio"
+                  value=""
+                  name="default-radio3"
+                  class="radio-button-noconfirm"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="content-check" v-if="dataFamily.hijo2">
+            <p class="text-radio-button">
+              {{ dataFamily.hijo2 }}
+            </p>
+            <div class="content-radio">
+              <div class="subcontent-radio-button">
+                <input
+                  id="default-radio-7"
+                  type="radio"
+                  value=""
+                  name="default-radio4"
+                  class="radio-button-confirm"
+                />
+              </div>
+              <div class="subcontent-radio-button">
+                <input
+                  checked
+                  id="default-radio-8"
+                  type="radio"
+                  value=""
+                  name="default-radio4"
+                  class="radio-button-noconfirm"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="content-check" v-if="dataFamily.hijo3">
+            <p class="text-radio-button">
+              {{ dataFamily.hijo3 }}
+            </p>
+            <div class="content-radio">
+              <div class="subcontent-radio-button">
+                <input
+                  id="default-radio-9"
+                  type="radio"
+                  value=""
+                  name="default-radio5"
+                  class="radio-button-confirm"
+                />
+              </div>
+              <div class="subcontent-radio-button">
+                <input
+                  checked
+                  id="default-radio-10"
+                  type="radio"
+                  value=""
+                  name="default-radio5"
+                  class="radio-button-noconfirm"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
+      <button type="submit" class="button-submit">Confirmar</button>
     </form>
   </div>
 </template>
 <style scoped>
 @media (min-width: 0px) {
   .content-popup {
-    @apply w-full flex flex-col justify-center items-center bg-[#FEF7F9] shadow-md rounded-[40px] border;
+    @apply w-full  min-h-full flex flex-col justify-center items-center bg-[#FEF7F9] shadow-md rounded-[40px] border z-[9999];
+  }
+  .content-close {
+    @apply w-9/5  absolute flex flex-col justify-center items-end -mt-[50px];
+  }
+  .closePopUp {
+    font-family: 'Quicksand', Sans-Serif;
+    @apply w-auto flex flex-col justify-center items-center px-[10px] rounded-[50%] bg-[#D0888E] text-white z-50 text-[24px] font-medium;
   }
   .content-gif-ceremony {
-    @apply w-full flex flex-col justify-center items-center -mt-[20px];
+    @apply w-full flex flex-col justify-center items-center -mt-[30px];
   }
   .flowers {
     @apply w-7/0 z-10 absolute;
   }
   .svg-celebration {
-    @apply w-3/7 z-30 -mt-[10px];
+    @apply w-3/7 z-30 -mt-[5px];
   }
   .content-radio-form {
-    @apply w-full flex flex-col justify-center items-center pt-2;
+    @apply w-full flex flex-col justify-center items-center;
   }
   .content-selection {
     @apply w-full flex flex-row justify-center items-center pb-10;
   }
   .text-title {
     font-family: 'Playfair Display', Serif;
-    @apply w-full flex flex-col justify-center items-center text-[20px] text-[#D0888E] font-medium pb-10;
+    @apply w-full flex flex-col justify-center items-center text-[20px] text-[#D0888E] font-medium;
   }
   .text-title-selection {
     font-family: 'Playfair Display', Serif;
@@ -133,6 +238,23 @@ defineProps({
   }
   .content-form {
     @apply w-full flex flex-col justify-center items-center;
+  }
+  .content-family-info {
+    @apply w-full flex flex-col justify-center items-start;
+  }
+  .content-check {
+    @apply w-full grid grid-cols-2 justify-center items-center pb-1;
+  }
+  .text-subtitle {
+    font-family: 'Playfair Display', Serif;
+    @apply w-full flex flex-col justify-center items-start pb-3 text-[18px] text-[#D0888E] font-medium;
+  }
+  .text-subtitle-check {
+    font-family: 'Playfair Display', Serif;
+    @apply w-full flex flex-col justify-center items-center text-[18px] text-[#D0888E] font-medium;
+  }
+  .content-confirm {
+    @apply w-full flex flex-row justify-center items-center;
   }
   .text-input-form {
     font-family: 'Quicksand', Sans-Serif;

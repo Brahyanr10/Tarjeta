@@ -1,13 +1,38 @@
 <script setup>
+import { onBeforeMount, ref } from 'vue';
+import AssistantsData from '../assets/Assistants/Assistants';
 const props = defineProps({
   setOpen: {
     type: Function,
     required: true,
   },
+  setDataFamily: {
+    type: Function,
+    required: true,
+  },
 });
-const pathname = window.location;
-const search = pathname.search.split('?');
-const id = search[1];
+
+const searchParams = new URLSearchParams(window.location.search);
+const id = searchParams.get('id');
+const stateFamily = ref(false);
+const validation = ref(AssistantsData);
+
+const findId = () => {
+  if (validation.value) {
+    const family = validation.value.filter((item) => item.id === id);
+
+    if (family?.length > 0) {
+      stateFamily.value = true;
+      props.setDataFamily(family[0]);
+    } else {
+      stateFamily.value = false;
+    }
+  }
+};
+
+onBeforeMount(() => {
+  findId();
+});
 </script>
 
 <template>
@@ -23,7 +48,7 @@ const id = search[1];
     </div>
     <h2 class="text-wellcome">Bienvenidos a la invitación de</h2>
     <h1 class="text-names">Brahyan & Ximena</h1>
-    <button class="button-in" v-if="id" @click="setOpen(false)">
+    <button class="button-in" v-if="stateFamily" @click="setOpen(false)">
       Ingresar
     </button>
     <p v-else class="text-wellcome">Por favor ingresa con el link enviado</p>
