@@ -37,8 +37,8 @@ const props = defineProps({
     <p class="text-title">¿Asistes a la celebración?</p>
     <iframe
       :src="dataFamily.url"
-      width="420"
-      height="1365"
+      width="90%"
+      height="600"
       frameborder="0"
       marginheight="0"
       marginwidth="0"
