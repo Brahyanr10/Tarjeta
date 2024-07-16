@@ -229,6 +229,6 @@ export default [
     hijos: false,
     hijo2: 'Natali Uribe',
     hijo3: 'Sebastian Uribe',
-    url: 'https://forms.gle/6Gk6dpJKrfwoeCRXA',
+    url: 'https://docs.google.com/forms/d/e/1FAIpQLSdLc6qmLUDfuDwV5D81bLReEwRUEkbhzquNsye5HWhZ1wrsYw/viewform?embedded=true',
   },
 ];
