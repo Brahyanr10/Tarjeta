@@ -98,6 +98,7 @@ export default [
     name2: 'Natalia Onofre',
     hijo1: false,
     hijo2: false,
+    url: 'https://forms.gle/SXj5gB3G1VoyhTAb7',
   },
   {
     id: 'FBJCMM',
