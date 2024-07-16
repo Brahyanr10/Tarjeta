@@ -35,39 +35,6 @@ const checkAssitance = ref(false);
     <h1 class="text-confirmation">Confirma tu asistencia!</h1>
     <p class="text-subconfirmation"></p>
     <div class="content-grid">
-      <div class="content-ceremony">
-        <div class="content-title">
-          <div class="subcontent-lazos">
-            <img
-              decoding="async"
-              class="w-auto z-50"
-              src="https://www.fixdate.io/modelo-invitacion/71/img/img_cinta01.svg"
-              alt=""
-              loading="lazy"
-            />
-          </div>
-          <p class="text-title">Ceremonia</p>
-          <div class="subcontent-lazos">
-            <img
-              decoding="async"
-              class="w-auto z-50"
-              src="https://www.fixdate.io/modelo-invitacion/71/img/img_cinta02.svg"
-              alt=""
-              loading="lazy"
-            />
-          </div>
-        </div>
-        <div class="content-gif-ceremony">
-          <img
-            decoding="async"
-            class="w-auto z-50"
-            src="../assets/Svg/ceremonywhite.svg"
-            alt=""
-            loading="lazy"
-          />
-        </div>
-      </div>
-
       <div class="content-celebration">
         <div class="content-title">
           <div class="subcontent-lazos">
@@ -142,13 +109,13 @@ const checkAssitance = ref(false);
   }
   .content-grid {
     background-color: #fef7f9;
-    @apply w-full grid grid-cols-2 justify-center items-center pt-5;
+    @apply w-full flex flex-col justify-center items-center pt-5;
   }
   .content-ceremony {
     @apply w-full flex flex-col justify-center items-center pt-0;
   }
   .content-gif-ceremony {
-    @apply w-[80%] flex flex-col justify-center items-center cursor-pointer z-10;
+    @apply w-[50%] flex flex-col justify-center items-center cursor-pointer z-10;
   }
   .content-line-ceremony {
     background-color: #fef7f9;
@@ -207,9 +174,7 @@ const checkAssitance = ref(false);
   .content-popup {
     @apply pt-32;
   }
-  .content-grid {
-    @apply w-full grid grid-cols-2;
-  }
+
   .content-line-ceremony {
     @apply hidden;
   }

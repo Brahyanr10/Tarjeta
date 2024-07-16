@@ -11,8 +11,8 @@ const props = defineProps({
     required: true,
   },
 });
-const confirm1 = ref(false);
-console.log(confirm1);
+
+// urlForm = props.dataFamily.url;
 </script>
 <template>
   <div class="content-popup">
@@ -35,152 +35,15 @@ console.log(confirm1);
       />
     </div>
     <p class="text-title">¿Asistes a la celebración?</p>
-    <form class="form-content">
-      <div class="content-form">
-        <div class="content-check">
-          <p class="text-subtitle">Asistentes</p>
-          <div class="content-confirm">
-            <p class="text-subtitle-check">Sí</p>
-            <p class="text-subtitle-check">No</p>
-          </div>
-        </div>
-        <div class="content-family-info">
-          <div class="content-check" v-if="dataFamily.name1">
-            <p class="text-radio-button">
-              {{ dataFamily.name1 }}
-            </p>
-            <div class="content-radio">
-              <div class="subcontent-radio-button">
-                <input
-                  @click="confirm1 = true"
-                  id="default-radio-1"
-                  type="radio"
-                  value=""
-                  name="default-radio1"
-                  class="radio-button-confirm"
-                />
-              </div>
-              <div class="subcontent-radio-button">
-                <input
-                  @click="confirm1 = false"
-                  checked
-                  id="default-radio-2"
-                  type="radio"
-                  value=""
-                  name="default-radio1"
-                  class="radio-button-noconfirm"
-                />
-              </div>
-            </div>
-          </div>
-          <div class="content-check" v-if="dataFamily.name2">
-            <p class="text-radio-button">
-              {{ dataFamily.name2 }}
-            </p>
-            <div class="content-radio">
-              <div class="subcontent-radio-button">
-                <input
-                  id="default-radio-3"
-                  type="radio"
-                  value=""
-                  name="default-radio2"
-                  class="radio-button-confirm"
-                />
-              </div>
-              <div class="subcontent-radio-button">
-                <input
-                  checked
-                  id="default-radio-4"
-                  type="radio"
-                  value=""
-                  name="default-radio2"
-                  class="radio-button-noconfirm"
-                />
-              </div>
-            </div>
-          </div>
-          <div class="content-check" v-if="dataFamily.hijo1">
-            <p class="text-radio-button">
-              {{ dataFamily.hijo1 }}
-            </p>
-            <div class="content-radio">
-              <div class="subcontent-radio-button">
-                <input
-                  id="default-radio-5"
-                  type="radio"
-                  value=""
-                  name="default-radio3"
-                  class="radio-button-confirm"
-                />
-              </div>
-              <div class="subcontent-radio-button">
-                <input
-                  checked
-                  id="default-radio-6"
-                  type="radio"
-                  value=""
-                  name="default-radio3"
-                  class="radio-button-noconfirm"
-                />
-              </div>
-            </div>
-          </div>
-          <div class="content-check" v-if="dataFamily.hijo2">
-            <p class="text-radio-button">
-              {{ dataFamily.hijo2 }}
-            </p>
-            <div class="content-radio">
-              <div class="subcontent-radio-button">
-                <input
-                  id="default-radio-7"
-                  type="radio"
-                  value=""
-                  name="default-radio4"
-                  class="radio-button-confirm"
-                />
-              </div>
-              <div class="subcontent-radio-button">
-                <input
-                  checked
-                  id="default-radio-8"
-                  type="radio"
-                  value=""
-                  name="default-radio4"
-                  class="radio-button-noconfirm"
-                />
-              </div>
-            </div>
-          </div>
-          <div class="content-check" v-if="dataFamily.hijo3">
-            <p class="text-radio-button">
-              {{ dataFamily.hijo3 }}
-            </p>
-            <div class="content-radio">
-              <div class="subcontent-radio-button">
-                <input
-                  id="default-radio-9"
-                  type="radio"
-                  value=""
-                  name="default-radio5"
-                  class="radio-button-confirm"
-                />
-              </div>
-              <div class="subcontent-radio-button">
-                <input
-                  checked
-                  id="default-radio-10"
-                  type="radio"
-                  value=""
-                  name="default-radio5"
-                  class="radio-button-noconfirm"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <button class="button-submit">Confirmar</button>
-    </form>
+    <iframe
+      :src="dataFamily.url"
+      width="420"
+      height="1365"
+      frameborder="0"
+      marginheight="0"
+      marginwidth="0"
+      >Cargando…</iframe
+    >
   </div>
 </template>
 <style scoped>
