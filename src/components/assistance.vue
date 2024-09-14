@@ -174,7 +174,6 @@ const checkAssitance = ref(false);
   .content-popup {
     @apply pt-32;
   }
-
   .content-line-ceremony {
     @apply hidden;
   }
@@ -186,6 +185,14 @@ const checkAssitance = ref(false);
   }
   .content-line-ceremony-md {
     @apply w-full flex flex-col justify-center items-center -mb-[175px];
+  }
+  .content-close {
+    @apply w-[700px];
+  }
+}
+@media (min-width: 1024px) {
+  .content-close {
+    @apply w-[920px];
   }
 }
 </style>
