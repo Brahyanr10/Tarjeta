@@ -5,7 +5,7 @@
       <img
         decoding="async"
         class="w-full z-10"
-        src="https://www.fixdate.io/modelo-invitacion/71/img/lineas01.svg"
+        src="../assets/svgs/lineas01.svg"
         alt=""
         loading="lazy"
       />
@@ -81,7 +81,7 @@
           <img
             decoding="async"
             class="w-full z-10"
-            src="https://www.fixdate.io/modelo-invitacion/71/img/lineas01.svg"
+            src="../assets/svgs/lineas01.svg"
             alt=""
             loading="lazy"
           />
