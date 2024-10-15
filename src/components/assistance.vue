@@ -26,7 +26,7 @@ const checkAssitance = ref(false);
       <img
         decoding="async"
         class="w-full z-10"
-        src="../assets/svgs/flores_Grupo04.png"
+        src="../assets/svgs/flores_Grupo04.webp"
         alt=""
         loading="lazy"
       />
