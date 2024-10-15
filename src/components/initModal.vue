@@ -42,7 +42,7 @@ onBeforeMount(() => {
       <img
         decoding="async"
         class="image"
-        src="https://www.fixdate.io/modelo-invitacion/71/img/adorno-modal-musica.png"
+        src="../assets/svgs/adorno-modal-musica.webp"
         alt=""
         loading="lazy"
       />
