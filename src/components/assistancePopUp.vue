@@ -20,7 +20,7 @@ const props = defineProps({
       <img
         decoding="async"
         class="flowers"
-        src="https://www.fixdate.io/modelo-invitacion/71/img/flores_Grupo04.png"
+        src="../assets/svgs/flores_Grupo04.webp"
         alt=""
         loading="lazy"
       />
