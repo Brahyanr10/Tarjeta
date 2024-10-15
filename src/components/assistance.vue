@@ -17,7 +17,7 @@ const checkAssitance = ref(false);
       <img
         decoding="async"
         class="w-full z-10"
-        src="https://www.fixdate.io/modelo-invitacion/71/img/lineas01.svg"
+        src="../assets/svgs/lineas01.svg"
         alt=""
         loading="lazy"
       />
@@ -26,7 +26,7 @@ const checkAssitance = ref(false);
       <img
         decoding="async"
         class="w-full z-10"
-        src="https://www.fixdate.io/modelo-invitacion/71/img/flores_Grupo04.png"
+        src="../assets/svgs/flores_Grupo04.png"
         alt=""
         loading="lazy"
       />
@@ -41,7 +41,7 @@ const checkAssitance = ref(false);
             <img
               decoding="async"
               class="w-auto z-50"
-              src="https://www.fixdate.io/modelo-invitacion/71/img/img_cinta01.svg"
+              src="../assets/svgs/img_cinta01.svg"
               alt=""
               loading="lazy"
             />
@@ -51,7 +51,7 @@ const checkAssitance = ref(false);
             <img
               decoding="async"
               class="w-auto z-50"
-              src="https://www.fixdate.io/modelo-invitacion/71/img/img_cinta02.svg"
+              src="../assets/svgs/img_cinta02.svg"
               alt=""
               loading="lazy"
             />

@@ -11,7 +11,7 @@
           <img
             decoding="async"
             class="w-full z-10"
-            src="../assets/weading/DSC_0450.jpg"
+            src="../assets/weading/DSC_0450.webp"
             alt=""
             loading="lazy"
           />
