@@ -20,7 +20,7 @@
           <img
             decoding="async"
             class="w-full z-50"
-            src="https://www.fixdate.io/modelo-invitacion/71/img/curva_mobile.png"
+            src="../assets/svgs/curva_mobile.png"
             alt=""
             loading="lazy"
           />
@@ -31,7 +31,7 @@
         <img
           decoding="async"
           class="w-full z-50"
-          src="https://www.fixdate.io/modelo-invitacion/71/img/curva_portada_VERTICAL.svg"
+          src="../assets/svgs/curva_portada_VERTICAL.svg"
           alt=""
           loading="lazy"
         />
@@ -62,7 +62,7 @@
             <img
               decoding="async"
               class="w-1/0"
-              src="https://www.fixdate.io/modelo-invitacion/71/img/comilla-apertura.svg"
+              src="../assets/svgs/comilla-apertura.svg"
               alt=""
               loading="lazy"
             />
@@ -76,7 +76,7 @@
             <img
               decoding="async"
               class="w-1/0"
-              src="https://www.fixdate.io/modelo-invitacion/71/img/comilla-cierre.svg"
+              src="../assets/svgs/comilla-cierre.svg"
               alt=""
               loading="lazy"
             />

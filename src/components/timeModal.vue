@@ -45,7 +45,7 @@ onUnmounted(() => {
         <img
           decoding="async"
           class="w-full z-50"
-          src="https://www.fixdate.io/modelo-invitacion/71/img/contador.png"
+          src="../assets/svgs/contador.png"
           alt=""
           loading="lazy"
         />
@@ -117,7 +117,7 @@ onUnmounted(() => {
         <img
           decoding="async"
           class="w-full z-50"
-          src="https://www.fixdate.io/modelo-invitacion/71/img/curva01.svg"
+          src="../assets/svgs/curva01.svg"
           alt=""
           loading="lazy"
         />
