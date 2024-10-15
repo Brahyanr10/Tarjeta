@@ -177,6 +177,9 @@ const checkAssitance = ref(false);
   .content-line-ceremony {
     @apply hidden;
   }
+  .content-line-flower {
+    @apply w-[40%] mt-5 z-50;
+  }
   .content-ceremony {
     @apply pt-0;
   }
@@ -193,6 +196,9 @@ const checkAssitance = ref(false);
 @media (min-width: 1024px) {
   .content-close {
     @apply w-[920px];
+  }
+  .content-line-flower {
+    @apply w-[40%] mt-0 z-50;
   }
 }
 </style>

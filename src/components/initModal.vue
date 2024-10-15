@@ -125,13 +125,10 @@ onBeforeMount(() => {
 }
 @media (min-width: 768px) {
   .image {
-    @apply w-[450px];
+    @apply w-[400px];
   }
 }
 @media (min-width: 1200px) {
-  .image {
-    @apply w-[600px];
-  }
   .text-wellcome {
     @apply text-[20px] leading-[30px];
   }
