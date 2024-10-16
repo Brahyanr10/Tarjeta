@@ -53,7 +53,7 @@
   }
   .content-separator {
     background-color: #fef7f9;
-    @apply w-full flex z-20;
+    @apply w-full flex z-20 pt-10;
   }
   .text-confirmation {
     font-family: 'Playfair Display', Serif;
