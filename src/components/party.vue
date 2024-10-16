@@ -117,6 +117,9 @@
   .note {
     @apply w-[auto];
   }
+  .text-card {
+    @apply text-[22px];
+  }
   .text-confirmation {
     @apply text-[50px];
   }
