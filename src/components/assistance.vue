@@ -101,7 +101,7 @@ const checkAssitance = ref(false);
   }
   .text-confirmation {
     font-family: 'Playfair Display', Serif;
-    @apply w-full flex flex-col justify-center items-center font-bold text-[25px] text-[#D0888E] pt-10;
+    @apply w-full flex flex-col justify-center items-center font-bold text-[30px] text-[#D0888E] pt-10;
   }
   .text-subconfirmation {
     font-family: 'Playfair Display', Serif;
