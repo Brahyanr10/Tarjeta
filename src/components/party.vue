@@ -39,7 +39,7 @@
           loading="lazy"
         />
         <button class="button-confirmation">
-          <p class="text-button">Ver más</p>
+          <p class="text-button">+ Info</p>
         </button>
       </div>
     </div>
