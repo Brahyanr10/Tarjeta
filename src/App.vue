@@ -5,6 +5,7 @@ import timeModal from './components/timeModal.vue';
 import info from './components/info.vue';
 import assistance from './components/assistance.vue';
 import assistancePopUp from './components/assistancePopUp.vue';
+import party from './components/party.vue';
 import { ref } from 'vue';
 
 const isView = ref(true);
@@ -38,6 +39,7 @@ const setDataFamily = (value) => {
       <info />
       <assistance :data-family="dataFamily" />
       <assistancePopUp v-if="confirmationView" :data-family="dataFamily" />
+      <party />
     </div>
   </div>
 </template>

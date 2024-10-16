@@ -1,0 +1,130 @@
+<script setup></script>
+<template>
+  <div class="content-separator">
+    <img
+      decoding="async"
+      class="w-full z-10"
+      src="../assets/svgs/curva02.svg"
+      alt=""
+      loading="lazy"
+    />
+  </div>
+  <div class="content-popup">
+    <h1 class="text-confirmation">Fiesta</h1>
+    <p class="text-subconfirmation">
+      Aqui algunos detalles para tener en cuenta
+    </p>
+    <div class="content-grid">
+      <div class="content-left">
+        <p class="text-card">CÓDIGO DE VESTIMENTA</p>
+        <img
+          decoding="async"
+          class="corbatin"
+          src="../assets/Svg/corbatin.svg"
+          alt=""
+          loading="lazy"
+        />
+        <button class="button-confirmation">
+          <p class="text-button">Ver más</p>
+        </button>
+      </div>
+      <div class="content-hiden"></div>
+      <div class="content-right">
+        <p class="text-card">TIPS Y NOTAS</p>
+        <img
+          decoding="async"
+          class="note"
+          src="../assets/Svg/note.svg"
+          alt=""
+          loading="lazy"
+        />
+        <button class="button-confirmation">
+          <p class="text-button">Ver más</p>
+        </button>
+      </div>
+    </div>
+  </div>
+</template>
+<style scoped>
+@media (min-width: 0px) {
+  .content-popup {
+    background-color: #fef7f9;
+    @apply w-full flex flex-col justify-center items-center pt-5 pb-10;
+  }
+  .content-separator {
+    background-color: #fef7f9;
+    @apply w-full flex z-20;
+  }
+  .text-confirmation {
+    font-family: 'Playfair Display', Serif;
+    @apply w-full flex flex-col justify-center items-center font-bold text-[45px] text-[#D0888E] pt-5 pb-5;
+  }
+  .text-subconfirmation {
+    font-family: 'Playfair Display', Serif;
+    @apply w-9/0 flex flex-col justify-center items-center text-center text-[16px] text-[#9A8479];
+  }
+  .content-grid {
+    background-color: #fef7f9;
+    @apply w-full flex flex-col justify-center items-center py-5;
+  }
+  .content-grid {
+    @apply w-9/0 flex flex-col justify-center items-center;
+  }
+  .text-card {
+    font-family: 'Playfair Display', Serif;
+    @apply w-full flex flex-col justify-center items-center text-[#716558] text-[22px] font-bold;
+  }
+  .content-left {
+    box-shadow: 0px 0px 15px 0px #fdced8;
+    @apply w-full p-10 grid grid-rows-3 justify-items-center items-center rounded-[20px] bg-[#FEF7F9];
+  }
+  .corbatin {
+    @apply w-3/0 py-6;
+  }
+  .button-confirmation {
+    @apply w-7/0 text-[18px] text-white bg-[#D0888E] rounded-full py-[10px] px-12 shadow-md cursor-pointer hover:bg-[#c47f85];
+  }
+  .text-button {
+    font-family: 'Quicksand', Sans-Serif;
+  }
+  .content-hiden {
+    @apply h-10;
+  }
+  .content-right {
+    box-shadow: 0px 0px 15px 0px #fdced8;
+    @apply w-full p-10 grid grid-rows-3 justify-items-center items-center rounded-[20px] bg-[#FEF7F9];
+  }
+}
+@media (min-width: 375px) {
+}
+@media (min-width: 425px) {
+}
+@media (min-width: 768px) {
+  .text-card {
+    @apply text-[18px];
+  }
+  .content-grid {
+    @apply w-9/0 flex flex-row justify-center items-center;
+  }
+  .note {
+    @apply w-[25%];
+  }
+  .content-hiden {
+    @apply w-80;
+  }
+}
+@media (min-width: 1024px) {
+  .note {
+    @apply w-[auto];
+  }
+  .text-confirmation {
+    @apply text-[50px];
+  }
+  .text-subconfirmation {
+    @apply text-[20px];
+  }
+  .content-grid {
+    @apply py-14;
+  }
+}
+</style>
