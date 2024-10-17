@@ -19,18 +19,35 @@ const checkMore = ref(false);
       Aquí algunos detalles para tener en cuenta
     </p>
     <div class="content-grid">
-      <div class="content-left">
-        <p class="text-card">CÓDIGO DE VESTIMENTA</p>
-        <img
-          decoding="async"
-          class="corbatin"
-          src="../assets/Svg/corbatin.svg"
-          alt=""
-          loading="lazy"
-        />
-        <button class="button-confirmation" @click="checkMore = true">
-          <p class="text-button">Ver más</p>
-        </button>
+      <div class="w-full flex flex-col justify-center items-center">
+        <div class="content-left" v-if="checkMore == false">
+          <p class="text-card">CÓDIGO DE VESTIMENTA</p>
+          <img
+            decoding="async"
+            class="corbatin"
+            src="../assets/Svg/corbatin.svg"
+            alt=""
+            loading="lazy"
+          />
+
+          <button class="button-confirmation" @click="checkMore = true">
+            <p class="text-button">Ver más</p>
+          </button>
+        </div>
+        <div class="content-left" v-if="checkMore == true">
+          <p class="text-card">INFO VESTIMENTA</p>
+          <img
+            decoding="async"
+            class="corbatin"
+            src="../assets/Svg/corbatin.svg"
+            alt=""
+            loading="lazy"
+          />
+
+          <button class="button-confirmation" @click="checkMore = false">
+            <p class="text-button">Volver</p>
+          </button>
+        </div>
       </div>
       <div class="content-hiden"></div>
       <div class="content-right">
@@ -45,28 +62,11 @@ const checkMore = ref(false);
         <button class="button-confirmation" @click="checkInfo = true">
           <p class="text-button">+ Info</p>
         </button>
-      </div>
-    </div>
-    <div class="card-container">
-      <input type="checkbox" id="flip-card" class="flip-checkbox" />
-      <div class="card">
-        <div class="card-inner">
-          <div class="card-front">
-            <div class="card-content"></div>
-
-            <p class="text-card">TIPS Y NOTAS</p>
-            <img
-              decoding="async"
-              class="note"
-              src="../assets/Svg/note.svg"
-              alt=""
-              loading="lazy"
-            />
-            <label for="flip-card" class="card-info">+ Info</label>
+        <div class="popupassistance" v-if="checkInfo == true">
+          <div class="content-close">
+            <button class="closePopUp" @click="checkInfo = false">X</button>
           </div>
-          <div class="card-back">
-            <label for="flip-card" class="card-back-info">Volver</label>
-          </div>
+          <assistancePopups :data-family="dataFamily" />
         </div>
       </div>
     </div>
@@ -120,49 +120,6 @@ const checkMore = ref(false);
   .content-right {
     box-shadow: 0px 0px 15px 0px #fdced8;
     @apply w-full p-10 grid grid-rows-3 justify-items-center items-center rounded-[20px] bg-[#FEF7F9];
-  }
-
-  .card-container {
-    position: relative;
-  }
-  .flip-checkbox {
-    display: none;
-  }
-  .card {
-    transform-style: preserve-3d;
-    transition: transform 0.6s;
-    @apply relative w-[300px] h-[200px];
-  }
-  .card-inner {
-    transform-style: preserve-3d;
-    transition: transform 0.6s;
-    @apply absolute w-full h-full;
-  }
-  .card-front,
-  .card-back {
-    position: absolute;
-    backface-visibility: hidden;
-    box-shadow: 0px 0px 15px 0px #fdced8;
-    @apply w-full p-10 grid grid-rows-2 justify-items-center items-center rounded-[20px] bg-[#FEF7F9];
-  }
-  .card-front {
-    z-index: 2;
-    transform: rotateY(0deg);
-  }
-  .card-back {
-    transform: rotateY(180deg);
-  }
-  .flip-checkbox:checked ~ .card .card-inner {
-    transform: rotateY(180deg);
-  }
-  .card-info,
-  .card-back-info {
-    cursor: pointer;
-    user-select: none;
-    @apply w-full text-[18px] text-white bg-[#D0888E] rounded-full py-[10px] px-12 shadow-md cursor-pointer hover:bg-[#c47f85];
-  }
-  .card-content {
-    @apply w-full flex flex-col justify-center items-center;
   }
 }
 @media (min-width: 375px) {
