@@ -35,14 +35,38 @@ const checkMore = ref(false);
           </button>
         </div>
         <div class="content-left" v-if="checkMore == true">
-          <p class="text-card">INFO VESTIMENTA</p>
-          <img
-            decoding="async"
-            class="corbatin"
-            src="../assets/Svg/corbatin.svg"
-            alt=""
-            loading="lazy"
-          />
+          <p class="text-card">CÓDIGO DE VESTIMENTA</p>
+          <div class="content-reserve">
+            <div class="content-dressCoded">
+              <div class="modal-info">
+                <p class="text-modal">Hombres</p>
+                <p class="text-submodal">(Traje Formal)</p>
+                <img
+                  decoding="async"
+                  class="traje-img"
+                  src="../assets/svgs/traje.png"
+                  alt=""
+                  loading="lazy"
+                />
+              </div>
+              <div class="modal-info">
+                <p class="text-modal">Mujeres</p>
+                <p class="text-submodal">(Vestido Elegante)</p>
+                <img
+                  decoding="async"
+                  class="traje-img"
+                  src="../assets/svgs/vestido.png"
+                  alt=""
+                  loading="lazy"
+                />
+              </div>
+            </div>
+            <div class="content-reserve">
+              <p class="text-submodal-color">Colores Reservados</p>
+              <p class="text-sub-submodal">Blanco para la novia</p>
+              <p class="text-sub-submodal">Azul para el novio</p>
+            </div>
+          </div>
 
           <button class="button-confirmation" @click="checkMore = false">
             <p class="text-button">Volver</p>
@@ -117,6 +141,34 @@ const checkMore = ref(false);
   .content-hiden {
     @apply h-10;
   }
+  .content-dressCoded {
+    @apply w-full grid grid-cols-2 justify-items-center items-center;
+  }
+  .modal-info {
+    @apply w-full flex flex-col justify-center items-center;
+  }
+  .traje-img {
+    @apply w-5/0 py-3;
+  }
+  .text-modal {
+    font-family: 'Playfair Display', Serif;
+    @apply w-full flex flex-col justify-center items-center text-[#716558] text-[22px] font-medium;
+  }
+  .content-reserve {
+    @apply w-full flex flex-col justify-center items-center;
+  }
+  .text-submodal {
+    font-family: 'Playfair Display', Serif;
+    @apply w-full flex flex-col justify-center items-center text-[#716558] text-[16px] font-medium;
+  }
+  .text-submodal-color {
+    font-family: 'Playfair Display', Serif;
+    @apply w-full flex flex-col justify-center items-center text-[#716558] text-[16px] font-bold;
+  }
+  .text-sub-submodal {
+    font-family: 'Playfair Display', Serif;
+    @apply w-full flex flex-col justify-center items-center text-[#716558] text-[16px] font-medium;
+  }
   .content-right {
     box-shadow: 0px 0px 15px 0px #fdced8;
     @apply w-full p-10 grid grid-rows-3 justify-items-center items-center rounded-[20px] bg-[#FEF7F9];
@@ -130,9 +182,7 @@ const checkMore = ref(false);
   .text-card {
     @apply text-[18px];
   }
-  .content-grid {
-    @apply w-9/0 flex flex-row justify-center items-center;
-  }
+
   .note {
     @apply w-[25%];
   }
@@ -154,7 +204,7 @@ const checkMore = ref(false);
     @apply text-[20px];
   }
   .content-grid {
-    @apply py-14;
+    @apply w-9/0 flex flex-row justify-center items-center py-14;
   }
 }
 </style>
