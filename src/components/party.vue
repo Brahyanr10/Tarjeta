@@ -82,7 +82,7 @@ const props = defineProps({
       <div class="content-hiden"></div>
       <div class="w-full flex flex-col justify-center items-center">
         <div class="content-right" v-if="checkInfo == false">
-          <p class="text-card">TIPS & NOTAS</p>
+          <p class="text-card">INFORMACIÓN</p>
           <img
             decoding="async"
             class="notes"
@@ -96,8 +96,8 @@ const props = defineProps({
           </button>
         </div>
         <div class="content-right" v-if="checkInfo == true">
-          <p class="text-card">TIPS & NOTAS</p>
-          <p class="text-submodal">Esta invitación incluye</p>
+          <p class="text-card">INFORMACIÓN</p>
+          <p class="text-submodal pt-2">Esta invitación incluye</p>
           <div class="content-reserve">
             <div class="content-dressCoded-tips">
               <div class="modal-info">
@@ -200,7 +200,7 @@ const props = defineProps({
     @apply w-full grid grid-cols-2 justify-items-center items-center pt-10 pb-5;
   }
   .content-dressCoded-tips {
-    @apply w-full grid grid-cols-2 justify-items-center items-center pt-10 pb-5;
+    @apply w-full grid grid-cols-2 justify-items-center items-center pt-4 pb-5;
   }
   .modal-info {
     @apply w-full flex flex-col justify-center items-center;
