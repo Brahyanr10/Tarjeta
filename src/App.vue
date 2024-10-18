@@ -37,9 +37,9 @@ const setDataFamily = (value) => {
       <card class="z-10" />
       <timeModal class="z-50 time" />
       <info />
+      <party :data-family="dataFamily" />
       <assistance :data-family="dataFamily" />
       <assistancePopUp v-if="confirmationView" :data-family="dataFamily" />
-      <party :data-family="dataFamily" />
     </div>
   </div>
 </template>
