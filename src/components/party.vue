@@ -192,9 +192,6 @@ const checkMore = ref(false);
   .text-sub-submodal {
     @apply text-[16px];
   }
-  .content-left {
-    @apply p-10;
-  }
 }
 @media (min-width: 768px) {
   .text-card {
