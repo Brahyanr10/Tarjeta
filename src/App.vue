@@ -6,6 +6,8 @@ import info from './components/info.vue';
 import assistance from './components/assistance.vue';
 import assistancePopUp from './components/assistancePopUp.vue';
 import party from './components/party.vue';
+import paralaxx from './components/Paralaxx.vue';
+import foooter from './components/foooter.vue';
 import { ref } from 'vue';
 
 const isView = ref(true);
@@ -38,8 +40,10 @@ const setDataFamily = (value) => {
       <timeModal class="z-50 time" />
       <info />
       <party :data-family="dataFamily" />
+      <paralaxx />
       <assistance :data-family="dataFamily" />
       <assistancePopUp v-if="confirmationView" :data-family="dataFamily" />
+      <foooter />
     </div>
   </div>
 </template>
