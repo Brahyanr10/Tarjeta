@@ -170,7 +170,7 @@ const checkMore = ref(false);
     @apply w-full flex flex-col justify-center items-center text-[#716558] text-[15px] font-medium;
   }
   .content-reserve-text {
-    @apply w-full flex flex-col justify-center items-center pt-20;
+    @apply w-full flex flex-col justify-center items-center pb-5;
   }
   .content-right {
     box-shadow: 0px 0px 15px 0px #fdced8;
