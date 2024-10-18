@@ -80,7 +80,10 @@ const props = defineProps({
         </div>
       </div>
       <div class="content-hiden"></div>
-      <div class="w-full flex flex-col justify-center items-center">
+      <div
+        class="w-full flex flex-col justify-center items-center"
+        v-if="dataFamily.finca == true"
+      >
         <div class="content-right" v-if="checkInfo == false">
           <p class="text-card">INFORMACIÓN</p>
           <img
