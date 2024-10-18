@@ -79,7 +79,7 @@ const props = defineProps({
           </button>
         </div>
       </div>
-      <div class="content-hiden"></div>
+      <div class="content-hiden" v-if="dataFamily.finca == true"></div>
       <div
         class="w-full flex flex-col justify-center items-center"
         v-if="dataFamily.finca == true"
