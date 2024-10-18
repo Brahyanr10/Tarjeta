@@ -138,6 +138,10 @@ const props = defineProps({
                 <p class="text-submodal">Alimentación</p>
               </div>
             </div>
+            <p class="text-submodal-note pt-2">Nota:</p>
+            <p class="text-submodal-note pb-2">
+              Esto es solo para las personas invitadas
+            </p>
           </div>
 
           <button class="button-confirmation" @click="checkInfo = false">
@@ -218,6 +222,10 @@ const props = defineProps({
   .text-submodal {
     font-family: 'Playfair Display', Serif;
     @apply w-full flex flex-col justify-center items-center text-[#716558] text-[15px] font-medium;
+  }
+  .text-submodal-note {
+    font-family: 'Playfair Display', Serif;
+    @apply w-full flex flex-col justify-center items-center text-[#716558] text-[11px] font-medium;
   }
   .text-submodal-color {
     font-family: 'Playfair Display', Serif;
