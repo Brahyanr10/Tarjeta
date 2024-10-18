@@ -8,8 +8,15 @@
       alt=""
       loading="lazy"
     />
-    <div class="subcontent-paralaxx-sm"></div>
-    <div class="subcontent-paralaxx-md"></div>
+    <div class="subcontent-paralaxx-md">
+      <img
+        decoding="async"
+        class="image-ring"
+        src="../assets/weading/anillo3.jpg"
+        alt=""
+        loading="lazy"
+      />
+    </div>
     <div class="subcontent-paralaxx-lg"></div>
     <img
       decoding="async"
@@ -32,9 +39,8 @@
   .content-paralax {
     @apply w-full flex flex-col justify-center items-center;
   }
-  .subcontent-paralaxx-sm {
-    background-image: url('../assets/weading/anillo2.jpg');
-    @apply w-full flex flex-col justify-center items-center bg-fixed bg-cover h-max py-[300px];
+  .subcontent-paralaxx-md {
+    @apply w-full flex flex-col justify-center items-center;
   }
   .parallaxx-img {
     @apply -mb-[30px] z-50;
@@ -47,13 +53,6 @@
   }
 }
 @media (min-width: 768px) {
-  .subcontent-paralaxx-sm {
-    @apply hidden;
-  }
-  .subcontent-paralaxx-md {
-    background-image: url('../assets/weading/anillo3.jpg');
-    @apply w-full flex flex-col justify-center items-center bg-fixed bg-cover h-max py-[300px];
-  }
   .parallaxx-img {
     @apply -mb-[60px];
   }
@@ -62,9 +61,6 @@
   }
 }
 @media (min-width: 1024px) {
-  .subcontent-paralaxx-sm {
-    @apply hidden;
-  }
   .subcontent-paralaxx-md {
     @apply hidden;
   }
