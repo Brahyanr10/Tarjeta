@@ -61,7 +61,7 @@ const checkMore = ref(false);
                 />
               </div>
             </div>
-            <div class="content-reserve">
+            <div class="content-reserve-text">
               <p class="text-submodal-color">Colores Reservados</p>
               <p class="text-sub-submodal">Blanco para la novia</p>
               <p class="text-sub-submodal">Azul para el novio</p>
@@ -123,11 +123,11 @@ const checkMore = ref(false);
   }
   .text-card {
     font-family: 'Playfair Display', Serif;
-    @apply w-full flex flex-col justify-center items-center text-[#716558] text-[22px] font-bold;
+    @apply w-full flex flex-col justify-center items-center text-[#716558] text-[20px] font-bold;
   }
   .content-left {
     box-shadow: 0px 0px 15px 0px #fdced8;
-    @apply w-full p-10 grid grid-rows-3 justify-items-center items-center rounded-[20px] bg-[#FEF7F9];
+    @apply w-full flex flex-col justify-center items-center py-16 rounded-[20px] bg-[#FEF7F9];
   }
   .corbatin {
     @apply w-3/0 py-6;
@@ -142,7 +142,7 @@ const checkMore = ref(false);
     @apply h-10;
   }
   .content-dressCoded {
-    @apply w-full grid grid-cols-2 justify-items-center items-center;
+    @apply w-full grid grid-cols-2 justify-items-center items-center pt-10 pb-5;
   }
   .modal-info {
     @apply w-full flex flex-col justify-center items-center;
@@ -155,19 +155,22 @@ const checkMore = ref(false);
     @apply w-full flex flex-col justify-center items-center text-[#716558] text-[22px] font-medium;
   }
   .content-reserve {
-    @apply w-full flex flex-col justify-center items-center;
+    @apply w-full flex flex-col justify-center items-center pb-5;
   }
   .text-submodal {
     font-family: 'Playfair Display', Serif;
-    @apply w-full flex flex-col justify-center items-center text-[#716558] text-[16px] font-medium;
+    @apply w-full flex flex-col justify-center items-center text-[#716558] text-[15px] font-medium;
   }
   .text-submodal-color {
     font-family: 'Playfair Display', Serif;
-    @apply w-full flex flex-col justify-center items-center text-[#716558] text-[16px] font-bold;
+    @apply w-full flex flex-col justify-center items-center text-[#716558] text-[15px] font-bold;
   }
   .text-sub-submodal {
     font-family: 'Playfair Display', Serif;
-    @apply w-full flex flex-col justify-center items-center text-[#716558] text-[16px] font-medium;
+    @apply w-full flex flex-col justify-center items-center text-[#716558] text-[15px] font-medium;
+  }
+  .content-reserve-text {
+    @apply w-full flex flex-col justify-center items-center pt-20;
   }
   .content-right {
     box-shadow: 0px 0px 15px 0px #fdced8;
@@ -177,6 +180,21 @@ const checkMore = ref(false);
 @media (min-width: 375px) {
 }
 @media (min-width: 425px) {
+  .text-card {
+    @apply text-[22px];
+  }
+  .text-submodal {
+    @apply text-[16px];
+  }
+  .text-submodal-color {
+    @apply text-[16px];
+  }
+  .text-sub-submodal {
+    @apply text-[16px];
+  }
+  .content-left {
+    @apply p-10;
+  }
 }
 @media (min-width: 768px) {
   .text-card {
