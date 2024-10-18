@@ -58,7 +58,7 @@
     @apply w-full flex flex-col justify-center items-center text-[#D0888E] text-[50px];
   }
   .content-Footer {
-    @apply w-full flex flex-col justify-center items-center bg-[#D0888E] py-1;
+    @apply w-full flex flex-col justify-center items-center bg-[#ffc4d0] py-1;
   }
   .text-button {
     font-family: 'Quicksand', Sans-Serif;
