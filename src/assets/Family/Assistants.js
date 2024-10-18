@@ -9,6 +9,7 @@ export default [
     hijo1: 'Jonathan Villamil',
     hijo2: false,
     url: 'https://forms.gle/5VdXZyFgMtJsev5A9',
+    finca: true,
   },
   {
     id: 'FVJGYR',
@@ -20,6 +21,7 @@ export default [
     hijo1: 'Mariana Gonzalez',
     hijo2: 'Cristian Gonzalez',
     url: 'https://forms.gle/F4BanstXLkGzuM2H6',
+    finca: true,
   },
   {
     id: 'FVARMM',
@@ -31,6 +33,7 @@ export default [
     hijo1: false,
     hijo2: false,
     url: 'https://forms.gle/1sLriU3TJA9rr6EG7',
+    finca: true,
   },
   {
     id: 'FVJRLA',
@@ -42,6 +45,7 @@ export default [
     hijo1: false,
     hijo2: false,
     url: 'https://forms.gle/jurzQE1RBBuUtQc17',
+    finca: true,
   },
   {
     id: 'FVJRJP',
@@ -53,6 +57,7 @@ export default [
     hijo1: 'Daniel Rodriguez',
     hijo2: false,
     url: 'https://forms.gle/h5n7j8JJ6x6RjaLBA',
+    finca: true,
   },
   {
     id: 'FVMVNM',
@@ -64,6 +69,7 @@ export default [
     hijo1: false,
     hijo2: false,
     url: 'https://forms.gle/22zVGxcLZkLGVQt17',
+    finca: true,
   },
   {
     id: 'FVNQ',
@@ -75,6 +81,7 @@ export default [
     hijo1: false,
     hijo2: false,
     url: 'https://forms.gle/X8rdyFY9dGBahQYz8',
+    finca: true,
   },
   {
     id: 'FVCDCQ',
@@ -86,6 +93,7 @@ export default [
     hijo1: false,
     hijo2: false,
     url: 'https://forms.gle/WGNwHkDZ83DgQEnF7',
+    finca: true,
   },
   {
     id: 'FVCAIC',
@@ -97,6 +105,7 @@ export default [
     hijo1: false,
     hijo2: false,
     url: 'https://forms.gle/1BAYTt54JFo9Pyfp6',
+    finca: true,
   },
   {
     id: 'FVMMNO',
@@ -108,6 +117,7 @@ export default [
     hijo1: false,
     hijo2: false,
     url: 'https://forms.gle/oR3mV8jbffipiVjeA',
+    finca: true,
   },
   {
     id: 'FVJCMM',
@@ -119,6 +129,7 @@ export default [
     hijo1: false,
     hijo2: false,
     url: 'https://forms.gle/UrjzE7PXb3QVAcxX8',
+    finca: false,
   },
   {
     id: 'FVLV',
@@ -130,6 +141,7 @@ export default [
     hijo1: false,
     hijo2: false,
     url: 'https://forms.gle/9yTYWE8HsZiXxm3PA',
+    finca: false,
   },
   {
     id: 'FGPPAO',
@@ -141,6 +153,7 @@ export default [
     hijo1: false,
     hijo2: false,
     url: 'https://forms.gle/EuDjBmWjN3QTEiNx5',
+    finca: true,
   },
   {
     id: 'FGJPLB',
@@ -152,6 +165,7 @@ export default [
     hijo1: 'Andres Paez',
     hijo2: 'Paula Paez',
     url: 'https://forms.gle/AvRB3XUkut69UY6g6',
+    finca: true,
   },
   {
     id: 'FBGME',
@@ -163,6 +177,7 @@ export default [
     hijo1: false,
     hijo2: false,
     url: 'https://forms.gle/NJEDtUQvzUjDi54a6',
+    finca: true,
   },
   {
     id: 'FBMM',
@@ -174,6 +189,7 @@ export default [
     hijo1: false,
     hijo2: false,
     url: 'https://forms.gle/ues3N92Uezb57VJJ9',
+    finca: true,
   },
   {
     id: 'FBME',
@@ -185,6 +201,7 @@ export default [
     hijo1: false,
     hijo2: false,
     url: 'https://forms.gle/uiCGsUUbWHe2e5Y26',
+    finca: true,
   },
   {
     id: 'FBDBRM',
@@ -196,6 +213,7 @@ export default [
     hijo1: 'Hijo',
     hijo2: false,
     url: 'https://forms.gle/Zo31f8gqyCQTpv297',
+    finca: true,
   },
   {
     id: 'FBDM',
@@ -207,6 +225,7 @@ export default [
     hijo1: false,
     hijo2: false,
     url: 'https://forms.gle/XZcaotzXhZuCcT1J9',
+    finca: true,
   },
   {
     id: 'FBJREA',
@@ -218,6 +237,7 @@ export default [
     hijo1: 'Santiago Rios',
     hijo2: false,
     url: 'https://forms.gle/79hrDmjnHB9a9BqUA',
+    finca: true,
   },
   {
     id: 'FBMA',
@@ -229,6 +249,7 @@ export default [
     hijo1: 'Laura Acuña',
     hijo2: 'Samuel Acuña',
     url: 'https://forms.gle/AV4xcEgox4XXTiXSA',
+    finca: true,
   },
   {
     id: 'FVHWRAI',
@@ -240,6 +261,7 @@ export default [
     hijo1: false,
     hijo2: false,
     url: 'https://forms.gle/NV4Tsb7LT3614mzJA',
+    finca: true,
   },
   {
     id: 'FFHUNR',
@@ -252,5 +274,6 @@ export default [
     hijo2: 'Natali Uribe',
     hijo3: 'Sebastian Uribe',
     url: 'https://forms.gle/xGCfPAYe2DSYjgyTA',
+    finca: true,
   },
 ];

@@ -39,7 +39,7 @@ const setDataFamily = (value) => {
       <info />
       <assistance :data-family="dataFamily" />
       <assistancePopUp v-if="confirmationView" :data-family="dataFamily" />
-      <party />
+      <party :data-family="dataFamily" />
     </div>
   </div>
 </template>

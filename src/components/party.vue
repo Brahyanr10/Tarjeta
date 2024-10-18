@@ -2,6 +2,12 @@
 import { ref } from 'vue';
 const checkInfo = ref(false);
 const checkMore = ref(false);
+const props = defineProps({
+  dataFamily: {
+    type: Object,
+    required: true,
+  },
+});
 </script>
 <template>
   <div class="content-separator">
@@ -74,23 +80,69 @@ const checkMore = ref(false);
         </div>
       </div>
       <div class="content-hiden"></div>
-      <div class="content-right">
-        <p class="text-card">TIPS Y NOTAS</p>
-        <img
-          decoding="async"
-          class="note"
-          src="../assets/Svg/note.svg"
-          alt=""
-          loading="lazy"
-        />
-        <button class="button-confirmation" @click="checkInfo = true">
-          <p class="text-button">+ Info</p>
-        </button>
-        <div class="popupassistance" v-if="checkInfo == true">
-          <div class="content-close">
-            <button class="closePopUp" @click="checkInfo = false">X</button>
+      <div class="w-full flex flex-col justify-center items-center">
+        <div class="content-right" v-if="checkInfo == false">
+          <p class="text-card">TIPS & NOTAS</p>
+          <img
+            decoding="async"
+            class="notes"
+            src="../assets/Svg/note.svg"
+            alt=""
+            loading="lazy"
+          />
+
+          <button class="button-confirmation" @click="checkInfo = true">
+            <p class="text-button">Ver más</p>
+          </button>
+        </div>
+        <div class="content-right" v-if="checkInfo == true">
+          <p class="text-card">TIPS & NOTAS</p>
+          <p class="text-submodal">Esta invitación incluye</p>
+          <div class="content-reserve">
+            <div class="content-dressCoded-tips">
+              <div class="modal-info">
+                <img
+                  decoding="async"
+                  class="traje-img"
+                  src="../assets/svgs/hotel.png"
+                  alt=""
+                  loading="lazy"
+                />
+                <p class="text-submodal pb-5">Alojamiento</p>
+                <img
+                  decoding="async"
+                  class="traje-img"
+                  src="../assets/svgs/deportes.png"
+                  alt=""
+                  loading="lazy"
+                />
+                <p class="text-submodal">Deportes</p>
+                <!-- <p class="text-submodal">(Si)</p> -->
+              </div>
+              <div class="modal-info">
+                <img
+                  decoding="async"
+                  class="traje-img"
+                  src="../assets/svgs/Piscina.png"
+                  alt=""
+                  loading="lazy"
+                />
+                <p class="text-submodal pb-5">Piscina</p>
+                <img
+                  decoding="async"
+                  class="traje-img"
+                  src="../assets/svgs/comida.png"
+                  alt=""
+                  loading="lazy"
+                />
+                <p class="text-submodal">Alimentación</p>
+              </div>
+            </div>
           </div>
-          <assistancePopups :data-family="dataFamily" />
+
+          <button class="button-confirmation" @click="checkInfo = false">
+            <p class="text-button">Volver</p>
+          </button>
         </div>
       </div>
     </div>
@@ -132,6 +184,9 @@ const checkMore = ref(false);
   .corbatin {
     @apply w-3/0 py-6;
   }
+  .notes {
+    @apply w-[15%] py-6;
+  }
   .button-confirmation {
     @apply w-7/0 text-[18px] text-white bg-[#D0888E] rounded-full py-[10px] px-12 shadow-md cursor-pointer hover:bg-[#c47f85];
   }
@@ -142,6 +197,9 @@ const checkMore = ref(false);
     @apply h-10;
   }
   .content-dressCoded {
+    @apply w-full grid grid-cols-2 justify-items-center items-center pt-10 pb-5;
+  }
+  .content-dressCoded-tips {
     @apply w-full grid grid-cols-2 justify-items-center items-center pt-10 pb-5;
   }
   .modal-info {
@@ -174,7 +232,7 @@ const checkMore = ref(false);
   }
   .content-right {
     box-shadow: 0px 0px 15px 0px #fdced8;
-    @apply w-full p-10 grid grid-rows-3 justify-items-center items-center rounded-[20px] bg-[#FEF7F9];
+    @apply w-full flex flex-col justify-center items-center py-16 rounded-[20px] bg-[#FEF7F9];
   }
 }
 @media (min-width: 375px) {
@@ -197,7 +255,6 @@ const checkMore = ref(false);
   .text-card {
     @apply text-[18px];
   }
-
   .note {
     @apply w-[25%];
   }
@@ -220,6 +277,12 @@ const checkMore = ref(false);
   }
   .content-grid {
     @apply w-9/0 flex flex-row justify-center items-center py-14;
+  }
+  .corbatin {
+    @apply w-3/0 py-6;
+  }
+  .notes {
+    @apply w-[11%] py-6;
   }
 }
 </style>
