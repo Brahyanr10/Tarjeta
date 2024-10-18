@@ -233,5 +233,8 @@
   .content-line-ceremony-md {
     @apply w-full flex flex-col justify-center items-center -mb-[175px];
   }
+  .text-title {
+    @apply text-[30px];
+  }
 }
 </style>
