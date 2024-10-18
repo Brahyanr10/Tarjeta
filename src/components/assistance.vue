@@ -91,7 +91,7 @@ const checkAssitance = ref(false);
   }
   .content-popup {
     background-color: #fef7f9;
-    @apply w-full flex flex-col justify-center items-center pt-10 pb-10;
+    @apply w-full flex flex-col justify-center items-center pt-24 pb-10;
   }
   .content-line-ceremony-md {
     @apply w-full flex z-20;
