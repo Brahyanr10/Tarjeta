@@ -312,4 +312,17 @@ export default [
     url: 'https://forms.gle/xGCfPAYe2DSYjgyTA',
     finca: true,
   },
+  {
+    id: 'FBLJO',
+    hijoadd: true,
+    sr: true,
+    hijos: true,
+    name1: 'Luis Ortiz',
+    name2: 'Esposa',
+    hijo1: '',
+    hijo2: '',
+    hijo3: '',
+    url: 'https://forms.gle/7QWCLhtppCaiYAPi6',
+    finca: false,
+  },
 ];
