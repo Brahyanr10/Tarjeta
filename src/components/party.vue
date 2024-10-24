@@ -153,6 +153,18 @@ const props = defineProps({
         </div>
       </div>
     </div>
+    <div class="content-sobresbg">
+      <p class="text-card">LLUVIA DE SOBRES</p>
+      <div class="content-sobres">
+        <img
+          decoding="async"
+          class="regalo"
+          src="../assets/Svg/sobre.svg"
+          alt=""
+          loading="lazy"
+        />
+      </div>
+    </div>
   </div>
 </template>
 <style scoped>
@@ -165,9 +177,17 @@ const props = defineProps({
     background-color: #fef7f9;
     @apply w-full flex z-20 pt-10;
   }
+  .content-sobres {
+    background-color: #fef7f9;
+    @apply w-auto flex z-20 pt-0;
+  }
   .text-confirmation {
     font-family: 'Playfair Display', Serif;
     @apply w-full flex flex-col justify-center items-center font-bold text-[45px] text-[#D0888E] pt-5 pb-5;
+  }
+  .text-sobres {
+    font-family: 'Playfair Display', Serif;
+    @apply w-full flex flex-col justify-center items-center font-bold text-[30px] text-[#D0888E] pt-5 pb-0;
   }
   .text-subconfirmation {
     font-family: 'Playfair Display', Serif;
@@ -187,6 +207,10 @@ const props = defineProps({
   .content-left {
     box-shadow: 0px 0px 15px 0px #fdced8;
     @apply w-full flex flex-col justify-center items-center py-16 rounded-[20px] bg-[#FEF7F9];
+  }
+  .content-sobresbg {
+    box-shadow: 0px 0px 15px 0px #fdced8;
+    @apply w-9/0 flex flex-col justify-center items-center py-8 rounded-[20px] bg-[#FEF7F9];
   }
   .corbatin {
     @apply w-3/0 py-6;
@@ -272,6 +296,18 @@ const props = defineProps({
   .content-hiden {
     @apply w-80;
   }
+  .corbatin {
+    @apply w-[22%] py-6;
+  }
+  .notes {
+    @apply w-[12%] py-6;
+  }
+  .regalo {
+    @apply w-full pb-6;
+  }
+  .button-confirmation {
+    @apply w-5/0 text-[18px] text-white bg-[#D0888E] rounded-full py-[8px] px-12 shadow-md cursor-pointer hover:bg-[#c47f85];
+  }
 }
 @media (min-width: 1024px) {
   .note {
@@ -282,6 +318,9 @@ const props = defineProps({
   }
   .text-confirmation {
     @apply text-[50px];
+  }
+  .text-sobres {
+    @apply text-[30px];
   }
   .text-subconfirmation {
     @apply text-[20px];
@@ -294,6 +333,9 @@ const props = defineProps({
   }
   .notes {
     @apply w-[11%] py-6;
+  }
+  .button-confirmation {
+    @apply w-7/0 text-[18px] text-white bg-[#D0888E] rounded-full py-[10px] px-12 shadow-md cursor-pointer hover:bg-[#c47f85];
   }
 }
 </style>
