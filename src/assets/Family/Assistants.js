@@ -376,7 +376,7 @@ export default [
     hijo1: '',
     hijo2: '',
     hijo3: '',
-    url: 'https://forms.gle/QRUKCHTu6qffHoqH8',
+    url: 'https://forms.gle/1RfTV18VhLQkKFN26',
     finca: true,
     lluvia: true,
   },
