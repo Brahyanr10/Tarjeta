@@ -165,7 +165,7 @@ export default [
     hijo1: false,
     hijo2: false,
     url: 'https://forms.gle/RZuDZ9L7MFnyofoG7',
-    finca: false,
+    finca: true,
     lluvia: true,
   },
   {
@@ -178,7 +178,7 @@ export default [
     hijo1: false,
     hijo2: false,
     url: 'https://forms.gle/LksniHC9uJRs7s6W7',
-    finca: false,
+    finca: true,
     lluvia: true,
   },
   {
@@ -191,7 +191,7 @@ export default [
     hijo1: 'Juliana',
     hijo2: false,
     url: 'https://forms.gle/aqVPawkJnP1ShopKA',
-    finca: false,
+    finca: true,
     lluvia: true,
   },
   {
